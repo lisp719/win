@@ -3,12 +3,12 @@
 set -e
 
 # resolv.conf
-sudo rm /etc/resolv.conf
-sudo sh -c "echo 'nameserver 8.8.8.8' > /etc/resolv.conf"
-cat /etc/resolv.conf
+sudo rm /etc/resolv.conf || : && echo nameserver 8.8.8.8 | sudo tee /etc/resolv.conf
 
-# zypper
-sudo zypper install -y the_silver_searcher tig vim-data
+# apt
+sudo sed -i -e "s%http://archive.ubuntu.com/ubuntu/%http://linux.yz.yamagata-u.ac.jp/ubuntu/%g" /etc/apt/sources.list
+sudo apt update
+sudo apt install -y make silversearcher-ag tig
 
 # ssh
 mkdir -p ~/.ssh
