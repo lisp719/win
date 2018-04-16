@@ -11,7 +11,7 @@ sudo rm /etc/resolv.conf || : && echo nameserver 8.8.8.8 | sudo tee /etc/resolv.
 # apt
 sudo sed -i -e "s%http://archive.ubuntu.com/ubuntu/%http://linux.yz.yamagata-u.ac.jp/ubuntu/%g" /etc/apt/sources.list
 sudo apt update
-sudo apt install -y make silversearcher-ag tig
+sudo apt install -y make ranger silversearcher-ag tig
 
 # ssh
 mkdir -p ~/.ssh
