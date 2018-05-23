@@ -3,7 +3,7 @@
 set -e
 
 # symlink
-ln -s /mnt/c/code/ ~/code
+ln -s /mnt/c/code/
 
 # resolv.conf
 sudo rm /etc/resolv.conf || : && echo nameserver 8.8.8.8 | sudo tee /etc/resolv.conf
