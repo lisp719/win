@@ -16,7 +16,7 @@ sudo apt install -y make ranger silversearcher-ag tig
 # ssh
 mkdir -p ~/.ssh
 cp /mnt/c/sync/.ssh/* ~/.ssh/
-chmod 600 ~/.ssh/config ~/.ssh/id_rsa
+chmod 600 ~/.ssh/*
 
 # git
 git config --global user.name "lisp719"
