@@ -30,7 +30,6 @@ curl 'http://vim-bootstrap.com/generate.vim' -d 'editor=vim' > ~/.vimrc
 mkdir -p ~/bin
 curl -L https://raw.github.com/simonwhitaker/gibo/master/gibo -o ~/bin/gibo
 chmod +x ~/bin/gibo
-gibo -u
 
 # fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
