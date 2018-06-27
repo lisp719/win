@@ -22,6 +22,7 @@ chmod 600 ~/.ssh/*
 git config --global user.name "lisp719"
 git config --global user.email "lisp719@gmail.com"
 git config --global push.default simple
+git config --global alias.s "status -bs"
 
 # vim
 curl 'http://vim-bootstrap.com/generate.vim' -d 'editor=vim' > ~/.vimrc
