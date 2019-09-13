@@ -16,7 +16,8 @@ sudo apt install -y \
   make \
   ranger \
   silversearcher-ag \
-  tig
+  tig \
+  w3m
 
 # ssh
 mkdir -p ~/.ssh
