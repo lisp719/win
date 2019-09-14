@@ -8,6 +8,10 @@ ln -s /mnt/c/code/
 # resolv.conf
 sudo rm /etc/resolv.conf || : && echo nameserver 8.8.8.8 | sudo tee /etc/resolv.conf
 
+# bash
+cp ~/.profile ~/.bash_profile
+echo "\nexport VTE_CJK_WIDTH=1\n" >> ~/.bash_profile
+
 # apt
 sudo sed -i -e "s%http://archive.ubuntu.com/ubuntu/%http://linux.yz.yamagata-u.ac.jp/ubuntu/%g" /etc/apt/sources.list
 sudo apt update
