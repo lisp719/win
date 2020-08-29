@@ -33,6 +33,7 @@ git config --global user.name "lisp719"
 git config --global user.email "lisp719@gmail.com"
 git config --global push.default current
 git config --global alias.s "status -bs"
+git config --global init.defaultBranch main
 
 # vim
 curl 'http://vim-bootstrap.com/generate.vim' -d 'editor=vim' > ~/.vimrc
