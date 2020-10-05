@@ -1,0 +1,18 @@
+[
+  {
+    "key": "ctrl+shift+oem_3",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+oem_3",
+    "command": "-workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+shift+oem_3",
+    "command": "-workbench.action.terminal.new"
+  },
+  {
+    "key": "alt+j",
+    "command": "findThenJump.initiate"
+  }
+]
