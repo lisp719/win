@@ -25,6 +25,9 @@ mkdir /code
 mkdir /sandbox
 mkdir /sync
 
+Copy-Item ./settings/ssh/config ~/.ssh/config
 Copy-Item ./settings/terminal/settings.json ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
 Copy-Item ./settings/vscode/* ~/AppData/Roaming/Code/User/
 Copy-Item ./settings/.gitconfig ~/.gitconfig
+
+Invoke-WebRequest "https://raw.githubusercontent.com/hashicorp/vagrant/master/keys/vagrant" -OutFile ~/.ssh/vagrant
