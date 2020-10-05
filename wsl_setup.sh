@@ -10,10 +10,8 @@ sudo sed -i -e "s%http://archive.ubuntu.com/ubuntu/%http://linux.yz.yamagata-u.a
 sudo apt update
 sudo apt install -y \
   atool \
-  make \
   ranger \
-  tig \
-  w3m
+  tig
 
 # ssh
 mkdir -p ~/.ssh
