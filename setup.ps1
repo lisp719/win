@@ -1,8 +1,3 @@
-mkdir /sandbox
-mkdir /sync
-
-Copy-Item .gitconfig ~/.gitconfig
-
 # chocolatey
 Set-ExecutionPolicy Bypass -Scope Process -Force
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
@@ -19,3 +14,10 @@ scoop install docker
 scoop install gibo
 scoop install git
 scoop install vscode
+
+mkdir /sandbox
+mkdir /sync
+
+Copy-Item ./settings/terminal/settings.json ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
+Copy-Item ./settings/vscode/* ~/AppData/Roaming/Code/User/
+Copy-Item ./settings/.gitconfig ~/.gitconfig
