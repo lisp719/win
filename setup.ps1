@@ -15,13 +15,16 @@ scoop install gibo
 scoop install git
 scoop install vscode
 
+# vscode
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack
+code --install-extension ms-vscode.powershell
+code --install-extension ms-vscode.sublime-keybindings
+
+# etc
+mkdir /code
 mkdir /sandbox
 mkdir /sync
 
 Copy-Item ./settings/terminal/settings.json ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
 Copy-Item ./settings/vscode/* ~/AppData/Roaming/Code/User/
 Copy-Item ./settings/.gitconfig ~/.gitconfig
-
-code --install-extension ms-vscode-remote.vscode-remote-extensionpack
-code --install-extension ms-vscode.powershell
-code --install-extension ms-vscode.sublime-keybindings
