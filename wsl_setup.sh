@@ -12,7 +12,6 @@ sudo apt install -y \
   atool \
   make \
   ranger \
-  silversearcher-ag \
   tig \
   w3m
 
@@ -28,14 +27,7 @@ git config --global push.default current
 git config --global alias.s "status -bs"
 git config --global init.defaultBranch main
 
-# vim
-curl 'http://vim-bootstrap.com/generate.vim' -d 'editor=vim' > ~/.vimrc
-
 # gibo
 mkdir -p ~/bin
 curl -L https://raw.github.com/simonwhitaker/gibo/master/gibo -o ~/bin/gibo
 chmod +x ~/bin/gibo
-
-# fzf
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install --all
