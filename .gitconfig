@@ -1,0 +1,13 @@
+[alias]
+  s = status -bs
+[core]
+  autocrlf = input
+[init]
+  defaultBranch = main
+[pull]
+  rebase = false
+[push]
+  default = current
+[user]
+  name = lisp719
+  email = lisp719@gmail.com

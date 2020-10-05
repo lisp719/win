@@ -19,11 +19,7 @@ cp /mnt/c/sync/.ssh/* ~/.ssh/
 chmod 600 ~/.ssh/*
 
 # git
-git config --global user.name "lisp719"
-git config --global user.email "lisp719@gmail.com"
-git config --global push.default current
-git config --global alias.s "status -bs"
-git config --global init.defaultBranch main
+cp .gitconfig ~/.gitconfig
 
 # gibo
 mkdir -p ~/bin
