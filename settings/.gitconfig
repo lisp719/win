@@ -2,6 +2,7 @@
   s = status -bs
 [core]
   autocrlf = input
+  editor = nano
 [init]
   defaultBranch = main
 [pull]
