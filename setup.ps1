@@ -16,8 +16,9 @@ scoop install gibo
 scoop install git
 
 # vscode
-code --install-extension ms-vscode-remote.vscode-remote-extensionpack
+code --install-extension esbenp.prettier-vscode
 code --install-extension ms-vscode.powershell
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 code --install-extension ms-vscode.sublime-keybindings
 
 # etc
