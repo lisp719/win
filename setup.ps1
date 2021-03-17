@@ -5,6 +5,7 @@ Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://cho
 
 choco install -y ctrl2cap
 choco install -y virtualbox
+choco install -y vscode
 
 # scoop
 Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
@@ -13,7 +14,6 @@ scoop bucket add extras
 scoop install docker
 scoop install gibo
 scoop install git
-scoop install vscode
 
 # vscode
 code --install-extension ms-vscode-remote.vscode-remote-extensionpack
