@@ -1,5 +1,12 @@
 {
+  "[powershell]": {
+    "editor.defaultFormatter": "ms-vscode.powershell"
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
   "docker.host": "ssh://vm",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "all",
@@ -7,14 +14,19 @@
   "editor.wordWrap": "on",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": true,
   "files.encoding": "utf8",
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
+  "FSharp.useSdkScripts": true,
   "git.ignoreMissingGitWarning": true,
-  "window.restoreWindows": "none",
-  "workbench.settings.editor": "json",
-  "workbench.startupEditor": "none",
+  "git-graph.repository.onLoad.showCheckedOutBranch": true,
+  "js/ts.implicitProjectConfig.checkJs": false,
+  "remote.containers.defaultExtensions": [
+    "esbenp.prettier-vscode",
+    "tranhl.find-then-jump"
+  ],
   "remote.SSH.defaultExtensions": [
     "esbenp.prettier-vscode",
     "tranhl.find-then-jump"
@@ -22,8 +34,9 @@
   "remote.SSH.remotePlatform": {
     "vm": "linux"
   },
-  "extensions.ignoreRecommendations": true,
+  "window.restoreWindows": "none",
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "none",
   "window.titleBarStyle": "native",
-  "workbench.editor.enablePreview": false,
-  "FSharp.useSdkScripts": true
+  "workbench.editor.enablePreview": false
 }
