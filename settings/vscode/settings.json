@@ -35,8 +35,8 @@
     "vm": "linux"
   },
   "window.restoreWindows": "none",
+  "window.titleBarStyle": "native",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
-  "window.titleBarStyle": "native",
   "workbench.editor.enablePreview": false
 }
