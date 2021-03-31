@@ -24,6 +24,7 @@ code --install-extension ms-vscode.sublime-keybindings
 # etc
 mkdir /workspace
 
+Copy-Item ./settings/profile.ps1 $profile
 Copy-Item ./settings/terminal/settings.json ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
 Copy-Item ./settings/vscode/* ~/AppData/Roaming/Code/User/
 Copy-Item ./settings/.gitconfig ~/.gitconfig
