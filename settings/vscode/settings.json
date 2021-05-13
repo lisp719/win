@@ -1,8 +1,12 @@
 {
+  "[clojure]": {
+    "editor.defaultFormatter": "betterthantomorrow.calva"
+  },
   "[powershell]": {
     "editor.defaultFormatter": "ms-vscode.powershell"
   },
   "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
     "editor.tabSize": 4
   },
   "docker.host": "ssh://vm",
@@ -29,6 +33,8 @@
   ],
   "remote.SSH.defaultExtensions": [
     "esbenp.prettier-vscode",
+    "kahole.magit",
+    "mhutchie.git-graph",
     "tranhl.find-then-jump"
   ],
   "remote.SSH.remotePlatform": {
