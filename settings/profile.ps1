@@ -1,1 +1,1 @@
-$env:Path += "/bin;"
+$env:Path += ";/bin;"
