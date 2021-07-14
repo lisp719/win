@@ -43,6 +43,7 @@
   "remote.SSH.remotePlatform": {
     "vm": "linux"
   },
+  "window.restoreWindows": "none",
   "workbench.editor.enablePreview": false,
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none"
