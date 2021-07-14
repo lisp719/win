@@ -48,7 +48,7 @@
   },
   "window.restoreWindows": "none",
   "window.titleBarStyle": "native",
+  "workbench.editor.enablePreview": false,
   "workbench.settings.editor": "json",
-  "workbench.startupEditor": "none",
-  "workbench.editor.enablePreview": false
+  "workbench.startupEditor": "none"
 }
