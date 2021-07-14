@@ -18,10 +18,8 @@
   "docker.host": "ssh://vm",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
-  "editor.wordWrap": "on",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "extensions.ignoreRecommendations": true,
@@ -32,7 +30,6 @@
   "FSharp.useSdkScripts": true,
   "git.ignoreMissingGitWarning": true,
   "git-graph.repository.onLoad.showCheckedOutBranch": true,
-  "js/ts.implicitProjectConfig.checkJs": false,
   "remote.containers.defaultExtensions": [
     "esbenp.prettier-vscode",
     "tranhl.find-then-jump"
@@ -46,8 +43,6 @@
   "remote.SSH.remotePlatform": {
     "vm": "linux"
   },
-  "window.restoreWindows": "none",
-  "window.titleBarStyle": "native",
   "workbench.editor.enablePreview": false,
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none"
