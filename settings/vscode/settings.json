@@ -2,12 +2,18 @@
   "[clojure]": {
     "editor.defaultFormatter": "betterthantomorrow.calva"
   },
+  "[fsharp]": {
+    "editor.defaultFormatter": "Ionide.Ionide-fsharp"
+  },
   "[powershell]": {
     "editor.defaultFormatter": "ms-vscode.powershell"
   },
   "[python]": {
     "editor.defaultFormatter": "ms-python.python",
     "editor.tabSize": 4
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "docker.host": "ssh://vm",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
