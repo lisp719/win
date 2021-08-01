@@ -21,6 +21,6 @@
   name = lisp719
   email = 368034+lisp719@users.noreply.github.com
 [gui]
-	encoding = utf-8
+  encoding = utf-8
 [credential]
-	helper = manager
+  helper = manager
