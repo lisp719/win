@@ -14,6 +14,9 @@ scoop install git
 
 # vscode
 code --install-extension esbenp.prettier-vscode
+code --install-extension kahole.magit
+code --install-extension mhutchie.git-graph
+code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-vscode.powershell
 code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 code --install-extension ms-vscode.sublime-keybindings
