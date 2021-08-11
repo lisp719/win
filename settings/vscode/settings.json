@@ -15,7 +15,6 @@
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
-  "docker.host": "ssh://vm",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.renderWhitespace": "all",
@@ -34,15 +33,6 @@
     "esbenp.prettier-vscode",
     "tranhl.find-then-jump"
   ],
-  "remote.SSH.defaultExtensions": [
-    "esbenp.prettier-vscode",
-    "kahole.magit",
-    "mhutchie.git-graph",
-    "tranhl.find-then-jump"
-  ],
-  "remote.SSH.remotePlatform": {
-    "vm": "linux"
-  },
   "window.restoreWindows": "none",
   "workbench.editor.enablePreview": false,
   "workbench.settings.editor": "json",
