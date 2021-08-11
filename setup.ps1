@@ -22,9 +22,8 @@ code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 code --install-extension ms-vscode.sublime-keybindings
 
 # etc
-mkdir /bin
-
 mkdir ~/Documents/PowerShell
+mkdir ~/bin
 mkdir ~/workspace
 
 Copy-Item ./settings/profile.ps1 ~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1
