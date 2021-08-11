@@ -4,15 +4,12 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 choco install -y ctrl2cap
-choco install -y virtualbox
+choco install -y docker-desktop
 choco install -y vscode
 
 # scoop
 Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
 
-scoop bucket add extras
-scoop install docker
-scoop install gibo
 scoop install git
 
 # vscode
