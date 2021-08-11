@@ -20,6 +20,7 @@ code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-vscode.powershell
 code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 code --install-extension ms-vscode.sublime-keybindings
+code --install-extension tranhl.find-then-jump
 
 # etc
 mkdir ~/Documents/PowerShell
