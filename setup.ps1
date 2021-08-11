@@ -3,14 +3,14 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
-choco install -y ctrl2cap
 choco install -y docker-desktop
+choco install -y git
 choco install -y vscode
 
 # scoop
 Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
 
-scoop install git
+scoop install lazydocker
 
 # vscode
 code --install-extension esbenp.prettier-vscode
