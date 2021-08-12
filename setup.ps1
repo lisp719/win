@@ -31,3 +31,4 @@ Copy-Item ./settings/profile.ps1 ~/Documents/PowerShell/Microsoft.PowerShell_pro
 Copy-Item ./settings/terminal/settings.json ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
 Copy-Item ./settings/vscode/* ~/AppData/Roaming/Code/User/
 Copy-Item ./settings/.gitconfig ~/.gitconfig
+Copy-Item ./settings/.wslconfig ~/.wslconfig
