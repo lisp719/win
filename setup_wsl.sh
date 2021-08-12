@@ -10,6 +10,10 @@ sudo apt install -y \
   ranger \
   tig
 
+# git
+cp ./settings/.gitconfig ~/.gitconfig
+git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
+
 # etc
 mkdir -p ~/workspace
 
