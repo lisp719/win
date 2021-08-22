@@ -2,6 +2,9 @@
 
 set -e
 
+# sudoers
+echo "${USER} ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/${USER}
+
 # package
 sudo add-apt-repository -y ppa:git-core/ppa
 sudo apt update
