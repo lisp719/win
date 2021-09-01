@@ -21,6 +21,7 @@ git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec
 
 # etc
 cp ./wsl/.bashrc ~/.bashrc
+cp ./wsl/.byobu/profile.tmux ~/.byobu/profile.tmux
 mkdir -p ~/workspace
 
 echo success
