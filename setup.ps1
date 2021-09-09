@@ -10,8 +10,6 @@ code --install-extension tranhl.find-then-jump
 
 # etc
 mkdir ~/Documents/PowerShell
-mkdir ~/bin
-mkdir ~/workspace
 
 Copy-Item ./settings/profile.ps1 ~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1
 Copy-Item ./settings/terminal/settings.json ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
