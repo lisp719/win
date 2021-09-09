@@ -1,3 +1,5 @@
+Invoke-Expression -Command $(gh completion -s powershell | Out-String)
+
 function phi {
   Write-Output "https://via.placeholder.com/${Args}"
 }
