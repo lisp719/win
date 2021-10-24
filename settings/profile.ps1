@@ -1,7 +1,5 @@
 Invoke-Expression -Command $(gh completion -s powershell | Out-String)
 
-Set-PSReadLineOption -EditMode emacs
-
 function phi {
   Write-Output "https://via.placeholder.com/${Args}"
 }
