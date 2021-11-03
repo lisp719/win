@@ -10,6 +10,14 @@ function en {
   Start-Process "https://www.deepl.com/translator#ja/en/${Args}"
 }
 
+function sandbox {
+  param (
+    [string]$Image
+  )
+
+  docker run -it -w /workspace $Image sh
+}
+
 function twgroup {
   $json = Get-Content "~/.tools.json" | ConvertFrom-Json
 
