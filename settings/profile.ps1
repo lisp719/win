@@ -12,10 +12,11 @@ function en {
 
 function sandbox {
   param (
-    [string]$Image
+    [string]$Image,
+    [string]$Command
   )
 
-  docker run -it -w /workspace $Image sh
+  docker run -it -w /workspace $Image $Command
 }
 
 function twgroup {
