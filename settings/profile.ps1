@@ -10,6 +10,14 @@ function en {
   Start-Process "https://www.deepl.com/translator#ja/en/${Args}"
 }
 
+function local {
+  param (
+    [int]$Port
+  )
+
+  Start-Process "http://localhost:${Port}"
+}
+
 function sandbox {
   param (
     [string]$Image,
