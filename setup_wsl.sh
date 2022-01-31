@@ -19,9 +19,11 @@ sudo apt install -y \
 cp ./settings/.gitconfig ~/.gitconfig
 git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
 
-# etc
 cp ./wsl/.bashrc ~/.bashrc
+
+mkdir -p ~/.byobu
 cp ./wsl/.byobu/profile.tmux ~/.byobu/profile.tmux
+
 mkdir -p ~/workspace
 
 echo success
