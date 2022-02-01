@@ -1,3 +1,6 @@
+# wsl
+winget import ./packages.json
+
 # etc
 mkdir ~/Documents/PowerShell
 

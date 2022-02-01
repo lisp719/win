@@ -1,0 +1,34 @@
+{
+  "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+  "CreationDate": "2022-02-01T09:28:04.857-00:00",
+  "Sources": [
+    {
+      "Packages": [
+        { "PackageIdentifier": "Docker.DockerDesktop" },
+        { "PackageIdentifier": "Git.Git" },
+        { "PackageIdentifier": "Microsoft.WindowsTerminal" },
+        { "PackageIdentifier": "Microsoft.VisualStudioCode" }
+      ],
+      "SourceDetails": {
+        "Argument": "https://winget.azureedge.net/cache",
+        "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+        "Name": "winget",
+        "Type": "Microsoft.PreIndexed.Package"
+      }
+    },
+    {
+      "Packages": [
+        { "PackageIdentifier": "9PNKDR50694P", "Comment": "DBeaver" },
+        { "PackageIdentifier": "9MZ1SNWT0N5D", "Comment": "PowerShell" },
+        { "PackageIdentifier": "9WZDNCRDK3WP", "Comment": "Slack" }
+      ],
+      "SourceDetails": {
+        "Argument": "https://storeedgefd.dsx.mp.microsoft.com/v9.0",
+        "Identifier": "StoreEdgeFD",
+        "Name": "msstore",
+        "Type": "Microsoft.Rest"
+      }
+    }
+  ],
+  "WinGetVersion": "1.1.13405"
+}
