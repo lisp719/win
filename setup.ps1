@@ -1,5 +1,5 @@
 # wsl
-winget import ./packages.json
+winget import --accept-package-agreements ./packages.json
 
 # etc
 if (!(Test-Path ~/Documents/PowerShell)) {
