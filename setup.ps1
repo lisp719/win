@@ -1,4 +1,4 @@
-# wsl
+# winget
 winget import --accept-package-agreements ./packages.json
 
 # etc
