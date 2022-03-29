@@ -38,7 +38,7 @@ function twgroup {
 }
 
 function twsearch {
-  Start-Process "https://twitter.com/search?src=spelling_expansion_revert_click&f=live&q=@inbox OR exclude:hashtags lang:ja ${Args}"
+  Start-Process "https://twitter.com/search?src=spelling_expansion_revert_click&f=live&q=@inbox OR exclude:hashtags exclude:replies lang:ja ${Args}"
 }
 
 function ysearch {
