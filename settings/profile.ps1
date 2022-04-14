@@ -21,7 +21,7 @@ function local {
 function sandbox {
   param (
     [string]$Image,
-    [string]$Command
+    [string]$Command = "bash"
   )
 
   docker run -it -w /workspace $Image $Command
@@ -44,3 +44,4 @@ function twsearch {
 function ysearch {
   Start-Process "https://www.youtube.com/results?search_query=${Args}&sp=CAASAhAB"
 }
+
