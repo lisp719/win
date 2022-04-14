@@ -1,5 +1,5 @@
 # winget
-winget import --accept-package-agreements ./packages.json
+winget import --accept-package-agreements ./winget.json
 
 # scoop
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
