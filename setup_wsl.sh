@@ -17,7 +17,7 @@ sudo apt install -y \
 
 # git
 cp ./settings/.gitconfig ~/.gitconfig
-git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
+git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager-core.exe"
 
 cp ./wsl/.bashrc ~/.bashrc
 
