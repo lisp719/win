@@ -128,7 +128,7 @@ export FZF_ALT_C_COMMAND="fd -t d"
 export PS1='\w$(__git_ps1)$ '
 
 # alias
-alias dcy="docker run --rm mogurastore/dcy"
+alias dcy="docker run --rm ghcr.io/mogurastore/dcy"
 alias gibo="docker run --rm simonwhitaker/gibo"
 
 alias fd=fdfind
