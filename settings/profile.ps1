@@ -2,6 +2,12 @@ Set-PSReadLineOption -BellStyle None -EditMode Emacs
 
 Invoke-Expression -Command $(gh completion -s powershell | Out-String)
 
+function Show-Upgrable-Packages {
+  scoop update
+  scoop status
+  winget upgrade
+}
+
 function phi {
   Write-Output "https://via.placeholder.com/${Args}"
 }
