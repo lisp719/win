@@ -11,7 +11,7 @@ admin
 
 ```powershell
 wsl —install -d ubuntu
-./setup.ps1
+./setup_win.ps1
 ```
 
 ## wsl
