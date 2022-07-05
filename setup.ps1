@@ -9,7 +9,7 @@ if (!(Get-Command "scoop" -ErrorAction SilentlyContinue)) {
   scoop bucket add extras
 }
 
-scoop install gh gibo lazydocker
+scoop install gh gibo
 
 # etc
 if (!(Test-Path ~/Documents/PowerShell)) {
