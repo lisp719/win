@@ -10,7 +10,7 @@
 admin
 
 ```powershell
-wsl —install -d ubuntu
+wsl --install -d ubuntu
 ./setup_win.ps1
 ```
 
