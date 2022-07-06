@@ -37,11 +37,11 @@
         src: "{{ item.src }}"
         dest: "{{ item.dest }}"
       loop:
-        - src: "{{ playbook_dir }}/wsl/.byobu/profile.tmux"
+        - src: "{{ playbook_dir }}/settings/.byobu/profile.tmux"
           dest: ~/.byobu/profile.tmux
         - src: "{{ playbook_dir }}/settings/.gitconfig"
           dest: ~/.gitconfig
-        - src: "{{ playbook_dir }}/wsl/.bashrc"
+        - src: "{{ playbook_dir }}/settings/.bashrc"
           dest: ~/.bashrc
 
     - name: Configure git credential helper
