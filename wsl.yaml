@@ -1,0 +1,51 @@
+- hosts: localhost
+  tasks:
+    - name: Add user to sudoers
+      become: true
+      copy:
+        dest: "/etc/sudoers.d/{{ user }}"
+        content: "{{ user }} ALL=(ALL) NOPASSWD: ALL"
+      vars:
+        user: lisp719
+
+    - name: Add apt repository
+      become: true
+      apt_repository:
+        repo: ppa:git-core/ppa
+
+    - name: Install apt packages
+      become: true
+      apt:
+        name: "{{ item }}"
+        update_cache: yes
+      loop:
+        - fd-find
+        - fzf
+        - git
+        - ranger
+
+    - name: Create directories
+      file:
+        path: "{{ item }}"
+        state: directory
+      loop:
+        - ~/.byobu
+        - ~/workspaces
+
+    - name: Copy files
+      copy:
+        src: "{{ item.src }}"
+        dest: "{{ item.dest }}"
+      loop:
+        - src: "{{ playbook_dir }}/wsl/.byobu/profile.tmux"
+          dest: ~/.byobu/profile.tmux
+        - src: "{{ playbook_dir }}/settings/.gitconfig"
+          dest: ~/.gitconfig
+        - src: "{{ playbook_dir }}/wsl/.bashrc"
+          dest: ~/.bashrc
+
+    - name: Configure git credential helper
+      git_config:
+        name: credential.helper
+        scope: global
+        value: /mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager-core.exe
