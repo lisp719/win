@@ -134,3 +134,5 @@ alias gibo="docker run --rm simonwhitaker/gibo"
 alias fd=fdfind
 alias fig=docker-compose
 alias mine="sudo chown -R $USER:$USER"
+
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
