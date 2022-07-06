@@ -16,13 +16,12 @@
     - name: Install apt packages
       become: true
       apt:
-        name: "{{ item }}"
+        name:
+          - fd-find
+          - fzf
+          - git
+          - ranger
         update_cache: yes
-      loop:
-        - fd-find
-        - fzf
-        - git
-        - ranger
 
     - name: Create directories
       file:
