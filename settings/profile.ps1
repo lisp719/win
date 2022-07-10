@@ -33,10 +33,6 @@ function sandbox {
   docker run -it -w /workspace $Image $Command
 }
 
-function todo {
-  gh issue -R "lisp719/todo" ${Args}
-}
-
 function twgroup {
   $json = Get-Content "~/.tools.json" | ConvertFrom-Json
 
