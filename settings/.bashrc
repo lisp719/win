@@ -135,4 +135,5 @@ alias fd=fdfind
 alias fig=docker-compose
 alias mine="sudo chown -R $USER:$USER"
 
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(gh completion -s bash)"
