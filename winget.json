@@ -6,7 +6,6 @@
       "Packages": [
         { "PackageIdentifier": "Docker.DockerDesktop" },
         { "PackageIdentifier": "Git.Git" },
-        { "PackageIdentifier": "Microsoft.WindowsTerminal" },
         { "PackageIdentifier": "Microsoft.VisualStudioCode" }
       ],
       "SourceDetails": {
