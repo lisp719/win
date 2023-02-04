@@ -1,5 +1,4 @@
 [alias]
-  amend = commit -v --amend
   bk = branch -f bk
   # switch -cだと補完が一部効かなくなるのでcheckoutを使う
   cu = checkout --no-track -b current
@@ -7,7 +6,6 @@
   no-skip = update-index --no-skip-worktree
   s = status -b -s
   skip = update-index --skip-worktree
-  sync = reset --hard
 [core]
   autocrlf = input
   editor = nano
