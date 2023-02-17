@@ -4,6 +4,7 @@
   "Sources": [
     {
       "Packages": [
+        { "PackageIdentifier": "dbeaver.dbeaver" },
         { "PackageIdentifier": "Docker.DockerDesktop" },
         { "PackageIdentifier": "Git.Git" },
         { "PackageIdentifier": "Microsoft.VisualStudioCode" }
@@ -17,7 +18,6 @@
     },
     {
       "Packages": [
-        { "PackageIdentifier": "9PNKDR50694P", "Comment": "DBeaver" },
         { "PackageIdentifier": "9MZ1SNWT0N5D", "Comment": "PowerShell" },
         { "PackageIdentifier": "9WZDNCRDK3WP", "Comment": "Slack" }
       ],
