@@ -42,7 +42,7 @@
         state: directory
       loop:
         - ~/.byobu
-        - ~/workspace
+        - ~/workspaces
 
     - name: Copy files
       copy:
