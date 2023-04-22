@@ -42,6 +42,7 @@
         state: directory
       loop:
         - ~/.byobu
+        - ~/.config/gh
         - ~/workspaces
 
     - name: Copy files
