@@ -11,7 +11,10 @@
     - name: Add apt repository
       become: true
       apt_repository:
-        repo: ppa:git-core/ppa
+        repo: "{{ item }}"
+      loop:
+        - ppa:git-core/ppa
+        - ppa:wslutilities/wslu
 
     - name: Install apt packages
       become: true
@@ -21,6 +24,7 @@
           - fzf
           - git
           - ranger
+          - wslu
         update_cache: yes
 
     - name: Install homebrew
