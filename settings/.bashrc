@@ -138,4 +138,7 @@ alias lzg="lazygit"
 alias mine="sudo chown -R $USER:$USER"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+. /home/linuxbrew/.linuxbrew/etc/bash_completion.d/brew
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 eval "$(gh completion -s bash)"
