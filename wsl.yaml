@@ -23,7 +23,6 @@
           - fd-find
           - fzf
           - git
-          - keychain
           - ranger
           - wslu
         update_cache: yes
@@ -48,7 +47,6 @@
       loop:
         - ~/.byobu
         - ~/.config/gh
-        - ~/.ssh
         - ~/workspaces
 
     - name: Copy files
