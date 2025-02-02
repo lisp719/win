@@ -19,7 +19,6 @@
     {
       "Packages": [
         { "PackageIdentifier": "9NZVDKPMR9RD", "Comment": "Firefox" },
-        { "PackageIdentifier": "9WZDNCRFHVJL", "Comment": "OneNote" },
         { "PackageIdentifier": "9MZ1SNWT0N5D", "Comment": "PowerShell" },
         { "PackageIdentifier": "XP89DCGQ3K6VLD", "Comment": "PowerToys" },
         { "PackageIdentifier": "9WZDNCRDK3WP", "Comment": "Slack" }
