@@ -1,0 +1,6 @@
+aliases:
+    co: pr checkout
+    todo: issue --repo lisp719/todo
+browser: pwsh.exe /c start
+git_protocol: https
+version: "1"

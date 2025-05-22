@@ -1,0 +1,73 @@
+- hosts: localhost
+  tasks:
+    - name: Update Installed Packages
+      become: true
+      dnf:
+        name: "*"
+        state: latest
+        update_cache: yes
+
+    - name: Install dnf packages
+      become: true
+      dnf:
+        name:
+          - "@development-tools"
+          - byobu
+          - fd-find
+          - fzf
+          - git
+          - ranger
+          - wget
+        state: latest
+        update_cache: yes
+
+    - name: Setup byobu
+      command: "{{ item }}"
+      loop:
+        - byobu-enable
+        - byobu-enable-prompt
+        - byobu-disable-prompt
+
+    - name: Install homebrew
+      shell: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+      args:
+        creates: /home/linuxbrew/.linuxbrew/bin/brew
+
+    - name: Check if brew file exists
+      stat:
+        path: /home/linuxbrew/.linuxbrew/bin/brew
+      register: brew_stat
+
+    - name: Install homebrew packages
+      homebrew:
+        path: /home/linuxbrew/.linuxbrew/bin
+        name:
+          - gh
+          - lazydocker
+          - lazygit
+        state: latest
+      when: brew_stat.stat.exists
+
+    - name: Create directories
+      file:
+        path: "{{ item }}"
+        state: directory
+      loop:
+        - ~/.bashrc.d
+        - ~/.config/byobu
+        - ~/.config/gh
+        - ~/workspaces
+
+    - name: Copy files
+      copy:
+        src: "{{ item.src }}"
+        dest: "{{ item.dest }}"
+      loop:
+        - src: "{{ playbook_dir }}/settings/.bashrc.d/custom.sh"
+          dest: ~/.bashrc.d/custom.sh
+        - src: "{{ playbook_dir }}/settings/.config/byobu/profile.tmux"
+          dest: ~/.config/byobu/profile.tmux
+        - src: "{{ playbook_dir }}/settings/.config/gh/config.yml"
+          dest: ~/.config/gh/config.yml
+        - src: "{{ playbook_dir }}/settings/.gitconfig"
+          dest: ~/.gitconfig
