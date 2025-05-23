@@ -1,5 +1,15 @@
 - hosts: localhost
   tasks:
+    - name: Add current user to docker group
+      become: true
+      user:
+        name: "{{ ansible_user_id }}"
+        groups: docker
+        append: yes
+
+    - name: Reset connection to allow user changes to affect current user
+      meta: reset_connection
+
     - name: Update Installed Packages
       become: true
       dnf:
