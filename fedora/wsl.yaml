@@ -22,7 +22,6 @@
       dnf:
         name:
           - "@development-tools"
-          - byobu
           - fd-find
           - fzf
           - git
@@ -30,13 +29,6 @@
           - wget
         state: latest
         update_cache: yes
-
-    - name: Setup byobu
-      command: "{{ item }}"
-      loop:
-        - byobu-enable
-        - byobu-enable-prompt
-        - byobu-disable-prompt
 
     - name: Install homebrew
       shell: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -55,6 +47,7 @@
           - gh
           - lazydocker
           - lazygit
+          - zellij
         state: latest
       when: brew_stat.stat.exists
 
@@ -64,8 +57,8 @@
         state: directory
       loop:
         - ~/.bashrc.d
-        - ~/.config/byobu
         - ~/.config/gh
+        - ~/.config/zellij
         - ~/workspaces
 
     - name: Copy files
@@ -75,9 +68,9 @@
       loop:
         - src: "{{ playbook_dir }}/settings/.bashrc.d/custom.sh"
           dest: ~/.bashrc.d/custom.sh
-        - src: "{{ playbook_dir }}/settings/.config/byobu/profile.tmux"
-          dest: ~/.config/byobu/profile.tmux
         - src: "{{ playbook_dir }}/settings/.config/gh/config.yml"
           dest: ~/.config/gh/config.yml
+        - src: "{{ playbook_dir }}/settings/.config/zellij/config.kdl"
+          dest: ~/.config/zellij/config.kdl
         - src: "{{ playbook_dir }}/settings/.gitconfig"
           dest: ~/.gitconfig
