@@ -37,14 +37,15 @@
           - gh
           - lazydocker
           - lazygit
+          - zellij
 
     - name: Create directories
       file:
         path: "{{ item }}"
         state: directory
       loop:
-        - ~/.byobu
         - ~/.config/gh
+        - ~/.config/zellij
         - ~/workspaces
 
     - name: Copy files
@@ -54,9 +55,9 @@
       loop:
         - src: "{{ playbook_dir }}/settings/.bashrc"
           dest: ~/.bashrc
-        - src: "{{ playbook_dir }}/settings/.byobu/profile.tmux"
-          dest: ~/.byobu/profile.tmux
         - src: "{{ playbook_dir }}/settings/.gitconfig"
           dest: ~/.gitconfig
         - src: "{{ playbook_dir }}/settings/gh/config.yml"
           dest: ~/.config/gh/config.yml
+        - src: "{{ playbook_dir }}/settings/zellij/config.kdl"
+          dest: ~/.config/zellij/config.kdl

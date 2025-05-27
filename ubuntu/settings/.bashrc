@@ -142,3 +142,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export HOMEBREW_NO_AUTO_UPDATE=1
 
 eval "$(gh completion -s bash)"
+
+# zellij
+ZELLIJ_AUTO_EXIT=true
+eval "$(zellij setup --generate-auto-start bash)"
