@@ -7,37 +7,36 @@ What to do manually.
 - windows update
 - microsoft store update
 
-## powershell
+## win setup
 
 Run with administrator rights.
 
 ```powershell
-wsl --install -d ubuntu
 ./setup_win.ps1
 ```
 
-## wsl
+# wsl
+
+```powershell
+wsl --install -d FedoraLinux-42
+```
+
+OR
+
+```powershell
+wsl --install -d ubuntu
+```
+
+# wsl setup
 
 ```bash
+cd fedora
 ./setup_wsl.sh
 ```
 
-## What the script executes
+OR
 
-### setup_win.ps1
-
-- Change ExecutionPolicy
-- Import packages by winget
-- Import packages by scoop
-- Copy config files
-
-### setup_wsl.sh
-
-- Install and run ansible
-
-### wsl.yaml
-
-- Add user to sudoers
-- Install apt packages
-- Install homebrew packages
-- Copy files
+```bash
+cd ubuntu
+./setup_wsl.sh
+```
