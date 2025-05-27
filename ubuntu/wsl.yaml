@@ -14,7 +14,6 @@
         repo: "{{ item }}"
       loop:
         - ppa:git-core/ppa
-        - ppa:wslutilities/wslu
 
     - name: Install apt packages
       become: true
@@ -24,7 +23,6 @@
           - fzf
           - git
           - ranger
-          - wslu
         update_cache: yes
 
     - name: Install homebrew
@@ -62,9 +60,3 @@
           dest: ~/.gitconfig
         - src: "{{ playbook_dir }}/settings/gh/config.yml"
           dest: ~/.config/gh/config.yml
-
-    - name: Configure git credential helper
-      git_config:
-        name: credential.helper
-        scope: global
-        value: /mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe

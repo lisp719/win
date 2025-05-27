@@ -1,0 +1,24 @@
+[alias]
+  bk = branch -f bk
+  # switch -cだと補完が一部効かなくなるのでcheckoutを使う
+  cu = checkout --no-track -b current
+  l = log --graph --decorate --oneline
+  no-skip = update-index --no-skip-worktree
+  s = status -b -s
+  skip = update-index --skip-worktree
+[core]
+  autocrlf = input
+  editor = nano
+[init]
+  defaultBranch = main
+[pull]
+  rebase = false
+[push]
+  default = current
+[user]
+  name = lisp719
+  email = 368034+lisp719@users.noreply.github.com
+[gui]
+  encoding = utf-8
+[credential]
+  helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
