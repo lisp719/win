@@ -39,6 +39,13 @@
           - lazygit
           - zellij
 
+    - name: Symlink zellij to /usr/local/bin
+      become: true
+      file:
+        src: /home/linuxbrew/.linuxbrew/bin/zellij
+        dest: /usr/local/bin/zellij
+        state: link
+
     - name: Create directories
       file:
         path: "{{ item }}"
