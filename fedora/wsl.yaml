@@ -22,41 +22,8 @@
       dnf:
         name:
           - "@development-tools"
-          - fd-find
-          - fzf
-          - git
-          - ranger
-          - wget
         state: latest
         update_cache: yes
-
-    - name: Install homebrew
-      shell: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-      args:
-        creates: /home/linuxbrew/.linuxbrew/bin/brew
-
-    - name: Check if brew file exists
-      stat:
-        path: /home/linuxbrew/.linuxbrew/bin/brew
-      register: brew_stat
-
-    - name: Install homebrew packages
-      homebrew:
-        path: /home/linuxbrew/.linuxbrew/bin
-        name:
-          - gh
-          - lazydocker
-          - lazygit
-          - zellij
-        state: latest
-      when: brew_stat.stat.exists
-
-    - name: Symlink zellij to /usr/local/bin
-      become: true
-      file:
-        src: /home/linuxbrew/.linuxbrew/bin/zellij
-        dest: /usr/local/bin/zellij
-        state: link
 
     - name: Create directories
       file:
@@ -64,9 +31,6 @@
         state: directory
       loop:
         - ~/.bashrc.d
-        - ~/.config/gh
-        - ~/.config/zellij
-        - ~/workspaces
 
     - name: Copy files
       copy:
@@ -75,9 +39,5 @@
       loop:
         - src: "{{ playbook_dir }}/settings/.bashrc.d/custom.sh"
           dest: ~/.bashrc.d/custom.sh
-        - src: "{{ playbook_dir }}/settings/.config/gh/config.yml"
-          dest: ~/.config/gh/config.yml
-        - src: "{{ playbook_dir }}/settings/.config/zellij/config.kdl"
-          dest: ~/.config/zellij/config.kdl
-        - src: "{{ playbook_dir }}/settings/.gitconfig"
-          dest: ~/.gitconfig
+
+    - import_tasks: ../tasks/common.yaml

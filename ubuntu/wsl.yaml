@@ -15,45 +15,11 @@
       loop:
         - ppa:git-core/ppa
 
-    - name: Install apt packages
+    - name: Update Installed Packages
       become: true
       apt:
-        name:
-          - fd-find
-          - fzf
-          - git
-          - ranger
+        upgrade: dist
         update_cache: yes
-
-    - name: Install homebrew
-      shell: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-      args:
-        creates: /home/linuxbrew/.linuxbrew/bin/brew
-
-    - name: Install homebrew packages
-      homebrew:
-        path: /home/linuxbrew/.linuxbrew/bin
-        name:
-          - gh
-          - lazydocker
-          - lazygit
-          - zellij
-
-    - name: Symlink zellij to /usr/local/bin
-      become: true
-      file:
-        src: /home/linuxbrew/.linuxbrew/bin/zellij
-        dest: /usr/local/bin/zellij
-        state: link
-
-    - name: Create directories
-      file:
-        path: "{{ item }}"
-        state: directory
-      loop:
-        - ~/.config/gh
-        - ~/.config/zellij
-        - ~/workspaces
 
     - name: Copy files
       copy:
@@ -62,9 +28,5 @@
       loop:
         - src: "{{ playbook_dir }}/settings/.bashrc"
           dest: ~/.bashrc
-        - src: "{{ playbook_dir }}/settings/.gitconfig"
-          dest: ~/.gitconfig
-        - src: "{{ playbook_dir }}/settings/gh/config.yml"
-          dest: ~/.config/gh/config.yml
-        - src: "{{ playbook_dir }}/settings/zellij/config.kdl"
-          dest: ~/.config/zellij/config.kdl
+
+    - import_tasks: ../tasks/common.yaml
