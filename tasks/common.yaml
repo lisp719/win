@@ -1,0 +1,59 @@
+- name: Install common packages
+  become: true
+  package:
+    name:
+      - fd-find
+      - fzf
+      - git
+      - ranger
+      - wget
+    state: latest
+
+- name: Install homebrew
+  shell: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  args:
+    creates: /home/linuxbrew/.linuxbrew/bin/brew
+
+- name: Check if brew file exists
+  stat:
+    path: /home/linuxbrew/.linuxbrew/bin/brew
+  register: brew_stat
+
+- name: Install homebrew packages
+  homebrew:
+    path: /home/linuxbrew/.linuxbrew/bin
+    name:
+      - gh
+      - lazydocker
+      - lazygit
+      - zellij
+    state: latest
+  when: brew_stat.stat.exists
+
+- name: Symlink zellij to /usr/local/bin
+  become: true
+  file:
+    src: /home/linuxbrew/.linuxbrew/bin/zellij
+    dest: /usr/local/bin/zellij
+    state: link
+
+- name: Create directories
+  file:
+    path: "{{ item }}"
+    state: directory
+  loop:
+    - ~/.config/gh
+    - ~/.config/zellij
+    - ~/workspaces
+
+- name: Copy files
+  copy:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  loop:
+    - src: "{{ playbook_dir }}/../settings/wsl/.gitconfig"
+      dest: ~/.gitconfig
+    - src: "{{ playbook_dir }}/../settings/wsl/.config/gh/config.yml"
+      dest: ~/.config/gh/config.yml
+    - src: "{{ playbook_dir }}/../settings/wsl/.config/zellij/config.kdl"
+      dest: ~/.config/zellij/config.kdl
