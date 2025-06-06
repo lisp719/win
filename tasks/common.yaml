@@ -5,6 +5,7 @@
       - fd-find
       - fzf
       - git
+      - htop
       - ranger
       - wget
     state: latest
