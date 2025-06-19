@@ -1,5 +1,10 @@
 - hosts: localhost
   tasks:
+    - name: Ensure docker group exists
+      become: true
+      group:
+        name: docker
+
     - name: Add current user to docker group
       become: true
       user:
