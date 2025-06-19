@@ -1,0 +1,15 @@
+services:
+  fedora:
+    image: fedora
+    command: /bin/bash
+    volumes:
+      - .:/workspace
+    working_dir: /workspace/fedora
+  ubuntu:
+    build:
+      context: .
+      dockerfile: ubuntu/Dockerfile.dev
+    command: /bin/bash
+    volumes:
+      - .:/workspace
+    working_dir: /workspace/ubuntu

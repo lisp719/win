@@ -31,12 +31,18 @@
     state: latest
   when: brew_stat.stat.exists
 
+- name: Check if zellij file exists
+  stat:
+    path: /home/linuxbrew/.linuxbrew/bin/zellij
+  register: zellij_stat
+
 - name: Symlink zellij to /usr/local/bin
   become: true
   file:
     src: /home/linuxbrew/.linuxbrew/bin/zellij
     dest: /usr/local/bin/zellij
     state: link
+  when: zellij_stat.stat.exists
 
 - name: Create directories
   file:
