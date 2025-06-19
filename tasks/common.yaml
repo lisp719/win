@@ -3,7 +3,6 @@
   package:
     name:
       - fd-find
-      - fzf
       - git
       - htop
       - ranger
@@ -24,6 +23,7 @@
   homebrew:
     path: /home/linuxbrew/.linuxbrew/bin
     name:
+      - fzf
       - gh
       - lazydocker
       - lazygit
