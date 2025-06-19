@@ -1,3 +1,8 @@
+# homebrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+. /home/linuxbrew/.linuxbrew/etc/bash_completion.d/brew
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 # fzf
 eval "$(fzf --bash)"
 export FZF_DEFAULT_COMMAND="fd -t f"
@@ -18,11 +23,6 @@ alias fig=docker-compose
 alias lzd="lazydocker"
 alias lzg="lazygit"
 alias mine="sudo chown -R $USER:$USER"
-
-# homebrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-. /home/linuxbrew/.linuxbrew/etc/bash_completion.d/brew
-export HOMEBREW_NO_AUTO_UPDATE=1
 
 # gh
 eval "$(gh completion -s bash)"
