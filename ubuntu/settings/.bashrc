@@ -117,6 +117,16 @@ if ! shopt -oq posix; then
 fi
 # [ -r /home/lisp719/.byobu/prompt ] && . /home/lisp719/.byobu/prompt   #byobu-prompt#
 
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
 # homebrew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 . /home/linuxbrew/.linuxbrew/etc/bash_completion.d/brew
@@ -135,7 +145,6 @@ export PS1='\w$(__git_ps1)$ '
 alias dcy="docker run --rm ghcr.io/mogurastore/dcy"
 alias gibo="docker run --rm simonwhitaker/gibo"
 
-alias fd=fdfind
 alias fig=docker-compose
 alias lzd="lazydocker"
 alias lzg="lazygit"

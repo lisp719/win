@@ -28,5 +28,7 @@
       loop:
         - src: "{{ playbook_dir }}/settings/.bashrc"
           dest: ~/.bashrc
+        - src: "{{ playbook_dir }}/settings/.profile"
+          dest: ~/.profile
 
     - import_tasks: ../tasks/common.yaml
