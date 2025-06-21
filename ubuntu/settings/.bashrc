@@ -127,11 +127,6 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# homebrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-. /home/linuxbrew/.linuxbrew/etc/bash_completion.d/brew
-export HOMEBREW_NO_AUTO_UPDATE=1
-
 # fzf
 eval "$(fzf --bash)"
 export FZF_DEFAULT_COMMAND="fd -t f"
@@ -141,16 +136,24 @@ export FZF_ALT_C_COMMAND="fd -t d"
 # PS1
 export PS1='\w$(__git_ps1)$ '
 
-# alias
+# docker alias
 alias dcy="docker run --rm ghcr.io/mogurastore/dcy"
 alias gibo="docker run --rm simonwhitaker/gibo"
 
+# alias
 alias fig=docker-compose
 alias lzd="lazydocker"
 alias lzg="lazygit"
 alias mine="sudo chown -R $USER:$USER"
 
+# gh
 eval "$(gh completion -s bash)"
+
+# task
+eval "$(task --completion bash)"
 
 # zellij
 ZELLIJ_AUTO_EXIT=true
+
+# zoxide
+eval "$(zoxide init bash)"

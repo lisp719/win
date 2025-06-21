@@ -1,8 +1,3 @@
-# homebrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-. /home/linuxbrew/.linuxbrew/etc/bash_completion.d/brew
-export HOMEBREW_NO_AUTO_UPDATE=1
-
 # fzf
 eval "$(fzf --bash)"
 export FZF_DEFAULT_COMMAND="fd -t f"
@@ -27,5 +22,11 @@ alias mine="sudo chown -R $USER:$USER"
 # gh
 eval "$(gh completion -s bash)"
 
+# task
+eval "$(task --completion bash)"
+
 # zellij
 ZELLIJ_AUTO_EXIT=true
+
+# zoxide
+eval "$(zoxide init bash)"
