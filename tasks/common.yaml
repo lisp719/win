@@ -22,12 +22,17 @@
 - name: Install pkgx packages
   shell: pkgm install {{ item }}
   loop:
+    - bat
+    - delta
     - fd
     - fzf
     - gh
     - lazydocker
     - lazygit
+    - rg
+    - task
     - zellij
+    - zoxide
   args:
     creates: /home/lisp719/.local/bin/{{ item }}
   when: pkgx_stat.stat.exists

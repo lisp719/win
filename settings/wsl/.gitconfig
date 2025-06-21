@@ -20,5 +20,15 @@
   email = 368034+lisp719@users.noreply.github.com
 [gui]
   encoding = utf-8
+
+# for wsl
+[core]
+  pager = delta
 [credential]
   helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
+[delta]
+    navigate = true
+[interactive]
+    diffFilter = delta --color-only
+[merge]
+    conflictstyle = zdiff3
