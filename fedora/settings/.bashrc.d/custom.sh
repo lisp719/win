@@ -4,11 +4,6 @@ export FZF_DEFAULT_COMMAND="fd -t f"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd -t d"
 
-# PS1
-. /usr/share/git-core/contrib/completion/git-prompt.sh
-export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1='\w$(__git_ps1)$ '
-
 # docker alias
 alias dcy="docker run --rm ghcr.io/mogurastore/dcy"
 alias gibo="docker run --rm simonwhitaker/gibo"
@@ -21,6 +16,9 @@ alias mine="sudo chown -R $USER:$USER"
 
 # gh
 eval "$(gh completion -s bash)"
+
+# starship
+eval "$(starship init bash)"
 
 # task
 eval "$(task --completion bash)"

@@ -30,6 +30,7 @@
     - lazydocker
     - lazygit
     - rg
+    - starship
     - task
     - zellij
     - zoxide
@@ -68,5 +69,7 @@
       dest: ~/.gitconfig
     - src: "{{ playbook_dir }}/../settings/wsl/.config/gh/config.yml"
       dest: ~/.config/gh/config.yml
+    - src: "{{ playbook_dir }}/../settings/wsl/.config/starship.toml"
+      dest: ~/.config/starship.toml
     - src: "{{ playbook_dir }}/../settings/wsl/.config/zellij/config.kdl"
       dest: ~/.config/zellij/config.kdl
