@@ -146,6 +146,9 @@ alias mine="sudo chown -R $USER:$USER"
 # gh
 eval "$(gh completion -s bash)"
 
+# git
+export GIT_PAGER=delta
+
 # starship
 eval "$(starship init bash)"
 

@@ -10,6 +10,16 @@ tasks:
     cmds:
       - echo "{{.GREETING}}"
     silent: true
+  fedora-check:
+    dir: fedora
+    cmds:
+      - ansible-playbook wsl.yaml --check --diff
+    silent: true
+  fedora-run:
+    dir: fedora
+    cmds:
+      - ansible-playbook wsl.yaml -v
+    silent: true
   ubuntu-check:
     dir: ubuntu
     cmds:
