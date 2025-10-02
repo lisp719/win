@@ -24,6 +24,7 @@
   loop:
     - bat
     - delta
+    - dua
     - fd
     - fzf
     - gh
