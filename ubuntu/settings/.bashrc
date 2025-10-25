@@ -143,6 +143,8 @@ alias lzd="lazydocker"
 alias lzg="lazygit"
 alias mine="sudo chown -R $USER:$USER"
 
+alias yazi="pkgx yazi"
+
 # gh
 eval "$(gh completion -s bash)"
 

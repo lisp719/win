@@ -5,7 +5,6 @@
       - curl
       - git
       - htop
-      - ranger
       - wget
     state: latest
 
