@@ -21,35 +21,16 @@
 - name: Install pkgx packages
   shell: pkgm install {{ item }}
   loop:
-    - bat
     - delta
-    - dua
     - fd
     - fzf
     - gh
-    - lazydocker
-    - lazygit
-    - rg
     - starship
     - task
-    - zellij
     - zoxide
   args:
     creates: /home/lisp719/.local/bin/{{ item }}
   when: pkgx_stat.stat.exists
-
-- name: Check if zellij file exists
-  stat:
-    path: ~/.local/bin/zellij
-  register: zellij_stat
-
-- name: Symlink zellij to /usr/local/bin
-  become: true
-  file:
-    src: /home/lisp719/.local/bin/zellij
-    dest: /usr/local/bin/zellij
-    state: link
-  when: zellij_stat.stat.exists
 
 - name: Create directories
   file:
