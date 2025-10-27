@@ -4,9 +4,11 @@
   "Sources": [
     {
       "Packages": [
+        { "PackageIdentifier": "ajeetdsouza.zoxide" },
         { "PackageIdentifier": "dbeaver.dbeaver" },
         { "PackageIdentifier": "Docker.DockerDesktop" },
         { "PackageIdentifier": "Git.Git" },
+        { "PackageIdentifier": "junegunn.fzf" },
         { "PackageIdentifier": "Microsoft.VisualStudioCode" },
         { "PackageIdentifier": "sxyazi.yazi" }
       ],

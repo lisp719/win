@@ -8,3 +8,4 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 Copy-Item ./settings/.gitconfig ~/.gitconfig
 Copy-Item ./settings/.wslconfig ~/.wslconfig
 Copy-Item ./settings/terminal/settings.json ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
+Copy-Item ./settings/Microsoft.PowerShell_profile.ps1 $PROFILE
