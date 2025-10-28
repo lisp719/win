@@ -21,7 +21,6 @@
 - name: Install pkgx packages
   shell: pkgm install {{ item }}
   loop:
-    - delta
     - fd
     - fzf
     - gh
