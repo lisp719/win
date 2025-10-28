@@ -8,7 +8,7 @@ export FZF_ALT_C_COMMAND="fd -t d"
 eval "$(gh completion -s bash)"
 
 # git
-export GIT_PAGER=delta
+export GIT_PAGER="pkgx delta"
 
 # starship
 eval "$(starship init bash)"
@@ -24,6 +24,7 @@ eval "$(zoxide init bash)"
 
 # pkgx aliases
 alias bat="pkgx bat"
+alias delta="pkgx delta"
 alias dua="pkgx dua"
 alias lazydocker="pkgx lazydocker"
 alias lazygit="pkgx lazygit"
