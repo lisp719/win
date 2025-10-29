@@ -137,7 +137,7 @@ export FZF_ALT_C_COMMAND="fd -t d"
 eval "$(gh completion -s bash)"
 
 # git
-export GIT_PAGER="pkgx delta"
+export GIT_PAGER="pkgx -q delta"
 
 # starship
 eval "$(starship init bash)"
@@ -152,14 +152,14 @@ ZELLIJ_AUTO_EXIT=true
 eval "$(zoxide init bash)"
 
 # pkgx aliases
-alias bat="pkgx bat"
-alias delta="pkgx delta"
-alias dua="pkgx dua"
-alias lazydocker="pkgx lazydocker"
-alias lazygit="pkgx lazygit"
-alias rg="pkgx rg"
-alias yazi="pkgx yazi"
-alias zellij="pkgx zellij"
+alias bat="pkgx -q bat"
+alias delta="pkgx -q delta"
+alias dua="pkgx -q dua"
+alias lazydocker="pkgx -q lazydocker"
+alias lazygit="pkgx -q lazygit"
+alias rg="pkgx -q rg"
+alias yazi="pkgx -q yazi"
+alias zellij="pkgx -q zellij"
 
 # docker alias
 alias dcy="docker run --rm ghcr.io/mogurastore/dcy"
