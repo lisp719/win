@@ -1,6 +1,7 @@
 Set-PSReadLineOption -BellStyle None -EditMode Emacs
 
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
+Invoke-Expression (&starship init powershell)
 
 function phi {
   Write-Output "https://via.placeholder.com/${Args}"
