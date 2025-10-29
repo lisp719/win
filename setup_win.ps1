@@ -1,8 +1,8 @@
 # winget
 winget import --accept-package-agreements ./winget.json
 
-# scoop
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+Install-Module posh-git -Scope CurrentUser -Force
 
 # etc
 Copy-Item ./settings/.gitconfig ~/.gitconfig

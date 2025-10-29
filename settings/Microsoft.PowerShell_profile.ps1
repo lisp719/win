@@ -1,7 +1,11 @@
+Import-Module posh-git
+
 Set-PSReadLineOption -BellStyle None -EditMode Emacs
 
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
 Invoke-Expression (&starship init powershell)
+
+Set-Alias lzg lazygit
 
 function phi {
   Write-Output "https://via.placeholder.com/${Args}"
