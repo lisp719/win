@@ -18,14 +18,22 @@
     path: /usr/local/bin/pkgx
   register: pkgx_stat
 
-- name: Install pkgx packages
-  shell: pkgm install {{ item }}
+- name: Install packages via pkgx shims
+  shell: pkgm shim {{ item }}
   loop:
+    - bat
+    - delta
+    - dua
     - fd
     - fzf
     - gh
+    - lazydocker
+    - lazygit
+    - rg
     - starship
     - task
+    - yazi
+    - zellij
     - zoxide
   args:
     creates: /home/lisp719/.local/bin/{{ item }}
