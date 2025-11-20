@@ -10,6 +10,9 @@ eval "$(gh completion -s bash)"
 # git
 export GIT_PAGER=delta
 
+# just
+eval "$(just --completions bash)"
+
 # starship
 eval "$(starship init bash)"
 
