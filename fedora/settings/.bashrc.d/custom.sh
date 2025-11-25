@@ -33,4 +33,3 @@ alias gibo="docker run --rm simonwhitaker/gibo"
 alias fig=docker-compose
 alias lzd="lazydocker"
 alias lzg="lazygit"
-alias mine="sudo chown -R $USER:$USER"
