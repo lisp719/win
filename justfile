@@ -4,17 +4,17 @@ default:
     echo 'Hello, world!'
 
 [working-directory: 'fedora']
-fedora-check:
+check-fedora:
+    ansible-playbook wsl.yaml --check --diff
+
+[working-directory: 'ubuntu']
+check-ubuntu:
     ansible-playbook wsl.yaml --check --diff
 
 [working-directory: 'fedora']
-fedora-run:
+run-fedora:
     ansible-playbook wsl.yaml -v
 
 [working-directory: 'ubuntu']
-ubuntu-check:
-    ansible-playbook wsl.yaml --check --diff
-
-[working-directory: 'ubuntu']
-ubuntu-run:
+run-ubuntu:
     ansible-playbook wsl.yaml -v
