@@ -1,11 +1,9 @@
 Import-Module posh-git
 
+Set-Alias lzg lazygit
 Set-PSReadLineOption -BellStyle None -EditMode Emacs
 
-Invoke-Expression (& { (zoxide init powershell | Out-String) })
 Invoke-Expression (&starship init powershell)
-
-Set-Alias lzg lazygit
 
 function phi {
   Write-Output "https://via.placeholder.com/${Args}"
@@ -48,3 +46,5 @@ function ysearch {
   Start-Process "https://www.youtube.com/results?search_query=${Args}&sp=CAASAhAB"
 }
 
+# Because the destination will not be saved, write it towards the end.
+Invoke-Expression (& { (zoxide init powershell | Out-String) })

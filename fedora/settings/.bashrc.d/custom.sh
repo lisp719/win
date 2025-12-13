@@ -22,9 +22,6 @@ eval "$(task --completion bash)"
 # zellij
 ZELLIJ_AUTO_EXIT=true
 
-# zoxide
-eval "$(zoxide init bash)"
-
 # docker alias
 alias dcy="docker run --rm ghcr.io/mogurastore/dcy"
 alias gibo="docker run --rm simonwhitaker/gibo"
@@ -33,3 +30,7 @@ alias gibo="docker run --rm simonwhitaker/gibo"
 alias fig=docker-compose
 alias lzd="lazydocker"
 alias lzg="lazygit"
+
+# Because the destination will not be saved, write it towards the end.
+# zoxide
+eval "$(zoxide init bash)"
