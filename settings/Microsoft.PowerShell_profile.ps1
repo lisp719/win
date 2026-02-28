@@ -5,6 +5,8 @@ Set-PSReadLineOption -BellStyle None -EditMode Emacs
 
 Invoke-Expression (&starship init powershell)
 
+jj util completion power-shell | Out-String | Invoke-Expression
+
 function phi {
   Write-Output "https://via.placeholder.com/${Args}"
 }

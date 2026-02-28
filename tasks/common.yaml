@@ -60,5 +60,7 @@
       dest: ~/.gitconfig
     - src: "{{ playbook_dir }}/../settings/wsl/.config/gh/config.yml"
       dest: ~/.config/gh/config.yml
+    - src: "{{ playbook_dir }}/../settings/jj/config.toml"
+      dest: ~/.config/jj/config.toml
     - src: "{{ playbook_dir }}/../settings/wsl/.config/zellij/config.kdl"
       dest: ~/.config/zellij/config.kdl

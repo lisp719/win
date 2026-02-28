@@ -7,6 +7,7 @@ Install-Module posh-git -Scope CurrentUser -Force
 # etc
 Copy-Item ./settings/.gitconfig ~/.gitconfig
 Copy-Item ./settings/.wslconfig ~/.wslconfig
+Copy-Item ./settings/jj/config.toml ~/AppData/Roaming/jj/config.toml
 Copy-Item ./settings/lazygit/config.yml ~/AppData/Local/lazygit/config.yml
 Copy-Item ./settings/starship.toml ~/.config/starship.toml
 Copy-Item ./settings/terminal/settings.json ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
