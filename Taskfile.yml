@@ -1,0 +1,31 @@
+version: "3"
+
+tasks:
+  default:
+    desc: "Default task from justfile"
+    cmds:
+      - echo 'Hello, world!'
+
+  check-fedora:
+    desc: "ansible-playbook --check --diff in fedora"
+    dir: fedora
+    cmds:
+      - ansible-playbook wsl.yaml --check --diff
+
+  run-fedora:
+    desc: "ansible-playbook -v in fedora"
+    dir: fedora
+    cmds:
+      - ansible-playbook wsl.yaml -v
+
+  check-ubuntu:
+    desc: "ansible-playbook --check --diff in ubuntu"
+    dir: ubuntu
+    cmds:
+      - ansible-playbook wsl.yaml --check --diff
+
+  run-ubuntu:
+    desc: "ansible-playbook -v in ubuntu"
+    dir: ubuntu
+    cmds:
+      - ansible-playbook wsl.yaml -v
