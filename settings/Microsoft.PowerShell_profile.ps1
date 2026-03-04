@@ -1,5 +1,7 @@
 Import-Module posh-git
 
+$env:YAZI_FILE_ONE = "C:\Program Files\Git\usr\bin\file.exe"
+
 Set-Alias lzg lazygit
 Set-PSReadLineOption -BellStyle None -EditMode Emacs
 
