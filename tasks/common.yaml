@@ -31,6 +31,7 @@
     - lazydocker
     - lazygit
     - node
+    - npm
     - rg
     - starship
     - task
