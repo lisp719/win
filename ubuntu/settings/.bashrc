@@ -139,6 +139,9 @@ eval "$(gh completion -s bash)"
 # git
 export GIT_PAGER=delta
 
+# jj
+source <(jj util completion bash)
+
 # just
 eval "$(just --completions bash)"
 
