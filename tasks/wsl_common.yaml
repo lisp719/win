@@ -31,6 +31,7 @@
     - just
     - lazydocker
     - lazygit
+    - micro
     - node
     - npm
     - rg
@@ -57,13 +58,13 @@
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
   loop:
+    - src: "{{ playbook_dir }}/../settings/jj/config.toml"
+      dest: ~/.config/jj/config.toml
     - src: "{{ playbook_dir }}/../settings/starship.toml"
       dest: ~/.config/starship.toml
     - src: "{{ playbook_dir }}/../settings/wsl/.gitconfig"
       dest: ~/.gitconfig
     - src: "{{ playbook_dir }}/../settings/wsl/.config/gh/config.yml"
       dest: ~/.config/gh/config.yml
-    - src: "{{ playbook_dir }}/../settings/wsl/.config/jj/config.toml"
-      dest: ~/.config/jj/config.toml
     - src: "{{ playbook_dir }}/../settings/wsl/.config/zellij/config.kdl"
       dest: ~/.config/zellij/config.kdl
