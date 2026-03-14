@@ -14,7 +14,8 @@
         { "PackageIdentifier": "junegunn.fzf" },
         { "PackageIdentifier": "Microsoft.VisualStudioCode" },
         { "PackageIdentifier": "Starship.Starship" },
-        { "PackageIdentifier": "sxyazi.yazi" }
+        { "PackageIdentifier": "sxyazi.yazi" },
+        { "PackageIdentifier": "wez.wezterm" }
       ],
       "SourceDetails": {
         "Argument": "https://winget.azureedge.net/cache",
