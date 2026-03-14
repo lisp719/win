@@ -1,6 +1,3 @@
-# environment variables
-export EDITOR="micro"
-
 # fzf
 eval "$(fzf --bash)"
 export FZF_DEFAULT_COMMAND="fd -t f"

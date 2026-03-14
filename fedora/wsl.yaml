@@ -45,4 +45,4 @@
         - src: "{{ playbook_dir }}/settings/.bashrc.d/custom.sh"
           dest: ~/.bashrc.d/custom.sh
 
-    - import_tasks: ../tasks/wsl_common.yaml
+    - import_tasks: ../tasks/common.yaml
