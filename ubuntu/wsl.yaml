@@ -31,4 +31,4 @@
         - src: "{{ playbook_dir }}/settings/.profile"
           dest: ~/.profile
 
-    - import_tasks: ../tasks/common.yaml
+    - import_tasks: ../tasks/wsl_common.yaml
