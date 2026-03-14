@@ -15,7 +15,8 @@
         { "PackageIdentifier": "Microsoft.VisualStudioCode" },
         { "PackageIdentifier": "Starship.Starship" },
         { "PackageIdentifier": "sxyazi.yazi" },
-        { "PackageIdentifier": "wez.wezterm" }
+        { "PackageIdentifier": "wez.wezterm" },
+        { "PackageIdentifier": "zyedidia.micro" }
       ],
       "SourceDetails": {
         "Argument": "https://winget.azureedge.net/cache",
