@@ -30,19 +30,4 @@
         state: latest
         update_cache: yes
 
-    - name: Create directories
-      file:
-        path: "{{ item }}"
-        state: directory
-      loop:
-        - ~/.bashrc.d
-
-    - name: Copy files
-      copy:
-        src: "{{ item.src }}"
-        dest: "{{ item.dest }}"
-      loop:
-        - src: "{{ playbook_dir }}/settings/.bashrc.d/custom.sh"
-          dest: ~/.bashrc.d/custom.sh
-
     - import_tasks: ../tasks/wsl_common.yaml

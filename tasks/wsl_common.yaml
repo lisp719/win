@@ -49,6 +49,7 @@
     path: "{{ item }}"
     state: directory
   loop:
+    - ~/.bashrc.d
     - ~/.config/gh
     - ~/.config/zellij
     - ~/workspaces
@@ -58,6 +59,8 @@
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
   loop:
+    - src: "{{ playbook_dir }}/../settings/.bashrc.d/custom.sh"
+      dest: ~/.bashrc.d/custom.sh
     - src: "{{ playbook_dir }}/../settings/jj/config.toml"
       dest: ~/.config/jj/config.toml
     - src: "{{ playbook_dir }}/../settings/starship.toml"
