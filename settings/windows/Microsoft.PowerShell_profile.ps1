@@ -1,6 +1,7 @@
 Import-Module posh-git
 
 $env:EDITOR = "edit.exe"
+$env:SHELL = "pwsh.exe"
 $env:YAZI_FILE_ONE = "C:\Program Files\Git\usr\bin\file.exe"
 
 Set-Alias lzg lazygit

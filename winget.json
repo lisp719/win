@@ -16,6 +16,7 @@
         { "PackageIdentifier": "Starship.Starship" },
         { "PackageIdentifier": "sxyazi.yazi" },
         { "PackageIdentifier": "wez.wezterm" },
+        { "PackageIdentifier": "Zellij.Zellij" },
         { "PackageIdentifier": "zyedidia.micro" }
       ],
       "SourceDetails": {
