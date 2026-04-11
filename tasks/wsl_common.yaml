@@ -68,6 +68,8 @@
       dest: ~/.config/starship.toml
     - src: "{{ playbook_dir }}/../settings/wsl/.config/gh/config.yml"
       dest: ~/.config/gh/config.yml
+    - src: "{{ playbook_dir }}/../settings/wsl/.config/opencode/AGENTS.md"
+      dest: ~/.config/opencode/AGENTS.md
     - src: "{{ playbook_dir }}/../settings/wsl/.config/opencode/opencode.json"
       dest: ~/.config/opencode/opencode.json
     - src: "{{ playbook_dir }}/../settings/wsl/.config/zellij/config.kdl"
