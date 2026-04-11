@@ -5,8 +5,8 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 Install-Module posh-git -Scope CurrentUser -Force
 
 # etc
-Copy-Item ./settings/jj/config.toml ~/AppData/Roaming/jj/config.toml
-Copy-Item ./settings/starship.toml ~/.config/starship.toml
+Copy-Item ./settings/common/jj/config.toml ~/AppData/Roaming/jj/config.toml
+Copy-Item ./settings/common/starship.toml ~/.config/starship.toml
 
 Copy-Item ./settings/windows/.gitconfig ~/.gitconfig
 Copy-Item ./settings/windows/.wslconfig ~/.wslconfig
