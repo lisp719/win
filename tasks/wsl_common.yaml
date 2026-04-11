@@ -60,12 +60,12 @@
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
   loop:
-    - src: "{{ playbook_dir }}/../settings/.bashrc.d/custom.sh"
-      dest: ~/.bashrc.d/custom.sh
-    - src: "{{ playbook_dir }}/../settings/jj/config.toml"
+    - src: "{{ playbook_dir }}/../settings/common/jj/config.toml"
       dest: ~/.config/jj/config.toml
-    - src: "{{ playbook_dir }}/../settings/starship.toml"
+    - src: "{{ playbook_dir }}/../settings/common/starship.toml"
       dest: ~/.config/starship.toml
+    - src: "{{ playbook_dir }}/../settings/wsl/.bashrc.d/custom.sh"
+      dest: ~/.bashrc.d/custom.sh
     - src: "{{ playbook_dir }}/../settings/wsl/.config/gh/config.yml"
       dest: ~/.config/gh/config.yml
     - src: "{{ playbook_dir }}/../settings/wsl/.config/opencode/AGENTS.md"
