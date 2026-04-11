@@ -127,45 +127,12 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# environment variables
-export EDITOR="micro"
-
-# fzf
-eval "$(fzf --bash)"
-export FZF_DEFAULT_COMMAND="fd -t f"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="fd -t d"
-
-# gh
-eval "$(gh completion -s bash)"
-
-# git
-export GIT_PAGER=delta
-
-# jj
-source <(jj util completion bash)
-
-# just
-eval "$(just --completions bash)"
-
-# starship
-eval "$(starship init bash)"
-
-# task
-eval "$(task --completion bash)"
-
-# zellij
-ZELLIJ_AUTO_EXIT=true
-
-# docker alias
-alias dcy="docker run --rm ghcr.io/mogurastore/dcy"
-alias gibo="docker run --rm simonwhitaker/gibo"
-
-# alias
-alias fig=docker-compose
-alias lzd="lazydocker"
-alias lzg="lazygit"
-
-# Because the destination will not be saved, write it towards the end.
-# zoxide
-eval "$(zoxide init bash)"
+# User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then
+    for rc in ~/.bashrc.d/*; do
+        if [ -f "$rc" ]; then
+            . "$rc"
+        fi
+    done
+fi
+unset rc
