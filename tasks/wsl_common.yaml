@@ -64,6 +64,8 @@
       dest: ~/.config/jj/config.toml
     - src: "{{ playbook_dir }}/../settings/common/starship.toml"
       dest: ~/.config/starship.toml
+    - src: "{{ playbook_dir }}/../settings/common/zellij/config.kdl"
+      dest: ~/.config/zellij/config.kdl
     - src: "{{ playbook_dir }}/../settings/wsl/.bashrc.d/custom.sh"
       dest: ~/.bashrc.d/custom.sh
     - src: "{{ playbook_dir }}/../settings/wsl/.config/gh/config.yml"
@@ -72,7 +74,5 @@
       dest: ~/.config/opencode/AGENTS.md
     - src: "{{ playbook_dir }}/../settings/wsl/.config/opencode/opencode.json"
       dest: ~/.config/opencode/opencode.json
-    - src: "{{ playbook_dir }}/../settings/wsl/.config/zellij/config.kdl"
-      dest: ~/.config/zellij/config.kdl
     - src: "{{ playbook_dir }}/../settings/wsl/.gitconfig"
       dest: ~/.gitconfig
