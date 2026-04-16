@@ -50,6 +50,7 @@
     state: directory
   loop:
     - ~/.bashrc.d
+    - ~/.copilot
     - ~/.config/gh
     - ~/.config/opencode
     - ~/.config/zellij
@@ -60,6 +61,10 @@
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
   loop:
+    - src: "{{ playbook_dir }}/../settings/common/AGENTS.md"
+      dest: ~/.copilot/copilot-instructions.md
+    - src: "{{ playbook_dir }}/../settings/common/AGENTS.md"
+      dest: ~/.config/opencode/AGENTS.md
     - src: "{{ playbook_dir }}/../settings/common/jj/config.toml"
       dest: ~/.config/jj/config.toml
     - src: "{{ playbook_dir }}/../settings/common/starship.toml"
@@ -70,8 +75,6 @@
       dest: ~/.bashrc.d/custom.sh
     - src: "{{ playbook_dir }}/../settings/wsl/.config/gh/config.yml"
       dest: ~/.config/gh/config.yml
-    - src: "{{ playbook_dir }}/../settings/wsl/.config/opencode/AGENTS.md"
-      dest: ~/.config/opencode/AGENTS.md
     - src: "{{ playbook_dir }}/../settings/wsl/.config/opencode/opencode.json"
       dest: ~/.config/opencode/opencode.json
     - src: "{{ playbook_dir }}/../settings/wsl/.gitconfig"

@@ -1,5 +1,6 @@
 Import-Module posh-git
 
+$env:COPILOT_MODEL="gpt-5-mini"
 $env:EDITOR = "edit.exe"
 $env:SHELL = "pwsh.exe"
 $env:YAZI_FILE_ONE = "C:\Program Files\Git\usr\bin\file.exe"

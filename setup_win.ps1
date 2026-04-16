@@ -5,6 +5,7 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 Install-Module posh-git -Scope CurrentUser -Force
 
 # etc
+Copy-Item ./settings/common/AGENTS.md ~/.copilot/copilot-instructions.md
 Copy-Item ./settings/common/jj/config.toml ~/AppData/Roaming/jj/config.toml
 Copy-Item ./settings/common/starship.toml ~/.config/starship.toml
 Copy-Item ./settings/common/zellij/config.kdl ~/AppData/Roaming/Zellij/config/config.kdl
