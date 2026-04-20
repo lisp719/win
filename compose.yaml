@@ -1,7 +1,7 @@
 services:
   fedora:
     image: fedora
-    command: /bin/bash
+    command: sleep infinity
     volumes:
       - .:/workspace
     working_dir: /workspace/fedora
@@ -9,7 +9,7 @@ services:
     build:
       context: .
       dockerfile: ubuntu/Dockerfile.dev
-    command: /bin/bash
+    command: sleep infinity
     volumes:
       - .:/workspace
     working_dir: /workspace/ubuntu

@@ -51,6 +51,7 @@
     - ~/.bashrc.d
     - ~/.copilot
     - ~/.config/gh
+    - ~/.config/jj
     - ~/.config/opencode
     - ~/.config/zellij
     - ~/workspaces
