@@ -15,9 +15,7 @@
         { "PackageIdentifier": "Microsoft.VisualStudioCode" },
         { "PackageIdentifier": "Starship.Starship" },
         { "PackageIdentifier": "sxyazi.yazi" },
-        { "PackageIdentifier": "wez.wezterm" },
-        { "PackageIdentifier": "Zellij.Zellij" },
-        { "PackageIdentifier": "zyedidia.micro" }
+        { "PackageIdentifier": "Zellij.Zellij" }
       ],
       "SourceDetails": {
         "Argument": "https://winget.azureedge.net/cache",
@@ -28,7 +26,6 @@
     },
     {
       "Packages": [
-        { "PackageIdentifier": "9NZVDKPMR9RD", "Comment": "Firefox" },
         { "PackageIdentifier": "9MZ1SNWT0N5D", "Comment": "PowerShell" },
         { "PackageIdentifier": "XP89DCGQ3K6VLD", "Comment": "PowerToys" },
         { "PackageIdentifier": "9WZDNCRDK3WP", "Comment": "Slack" }
