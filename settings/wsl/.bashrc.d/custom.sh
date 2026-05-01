@@ -17,9 +17,6 @@ export GIT_PAGER=delta
 # jj
 source <(jj util completion bash)
 
-# just
-eval "$(just --completions bash)"
-
 # starship
 eval "$(starship init bash)"
 
