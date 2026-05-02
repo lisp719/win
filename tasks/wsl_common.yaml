@@ -65,14 +65,6 @@
     - ~/.config/opencode/AGENTS.md
     - ~/.codex/AGENTS.md
 
-- name: Copy AI tool configs
-  copy:
-    src: "{{ item.src }}"
-    dest: "{{ item.dest }}"
-  loop:
-    - src: "{{ playbook_dir }}/../settings/wsl/.config/opencode/opencode.json"
-      dest: ~/.config/opencode/opencode.json
-
 - name: Copy codex seed config (first install only)
   copy:
     src: "{{ playbook_dir }}/../settings/wsl/.codex/config.toml"
@@ -92,6 +84,8 @@
       dest: ~/.config/zellij/config.kdl
     - src: "{{ playbook_dir }}/../settings/wsl/.config/gh/config.yml"
       dest: ~/.config/gh/config.yml
+    - src: "{{ playbook_dir }}/../settings/wsl/.config/opencode/opencode.json"
+      dest: ~/.config/opencode/opencode.json
 
 - name: Copy shell configs
   copy:
