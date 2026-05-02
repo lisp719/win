@@ -48,6 +48,7 @@
     state: directory
   loop:
     - ~/.bashrc.d
+    - ~/.codex
     - ~/.copilot
     - ~/.config/gh
     - ~/.config/jj
@@ -55,26 +56,49 @@
     - ~/.config/zellij
     - ~/workspaces
 
-- name: Copy files
+- name: Copy AGENTS.md
+  copy:
+    src: "{{ playbook_dir }}/../settings/common/AGENTS.md"
+    dest: "{{ item }}"
+  loop:
+    - ~/.copilot/copilot-instructions.md
+    - ~/.config/opencode/AGENTS.md
+    - ~/.codex/AGENTS.md
+
+- name: Copy AI tool configs
   copy:
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
   loop:
-    - src: "{{ playbook_dir }}/../settings/common/AGENTS.md"
-      dest: ~/.copilot/copilot-instructions.md
-    - src: "{{ playbook_dir }}/../settings/common/AGENTS.md"
-      dest: ~/.config/opencode/AGENTS.md
+    - src: "{{ playbook_dir }}/../settings/wsl/.config/opencode/opencode.json"
+      dest: ~/.config/opencode/opencode.json
+
+- name: Copy codex seed config (first install only)
+  copy:
+    src: "{{ playbook_dir }}/../settings/wsl/.codex/config.toml"
+    dest: ~/.codex/config.toml
+    force: no
+
+- name: Copy CLI tool configs
+  copy:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  loop:
     - src: "{{ playbook_dir }}/../settings/common/jj/config.toml"
       dest: ~/.config/jj/config.toml
     - src: "{{ playbook_dir }}/../settings/common/starship.toml"
       dest: ~/.config/starship.toml
     - src: "{{ playbook_dir }}/../settings/common/zellij/config.kdl"
       dest: ~/.config/zellij/config.kdl
-    - src: "{{ playbook_dir }}/../settings/wsl/.bashrc.d/custom.sh"
-      dest: ~/.bashrc.d/custom.sh
     - src: "{{ playbook_dir }}/../settings/wsl/.config/gh/config.yml"
       dest: ~/.config/gh/config.yml
-    - src: "{{ playbook_dir }}/../settings/wsl/.config/opencode/opencode.json"
-      dest: ~/.config/opencode/opencode.json
+
+- name: Copy shell configs
+  copy:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  loop:
+    - src: "{{ playbook_dir }}/../settings/wsl/.bashrc.d/custom.sh"
+      dest: ~/.bashrc.d/custom.sh
     - src: "{{ playbook_dir }}/../settings/wsl/.gitconfig"
       dest: ~/.gitconfig
