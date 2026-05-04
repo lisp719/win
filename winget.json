@@ -26,6 +26,7 @@
     },
     {
       "Packages": [
+        { "PackageIdentifier": "9PLM9XGG6VKS", "Comment": "Codex" },
         { "PackageIdentifier": "9MZ1SNWT0N5D", "Comment": "PowerShell" },
         { "PackageIdentifier": "XP89DCGQ3K6VLD", "Comment": "PowerToys" },
         { "PackageIdentifier": "9WZDNCRDK3WP", "Comment": "Slack" }
