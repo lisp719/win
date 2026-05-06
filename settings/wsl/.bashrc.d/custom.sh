@@ -37,6 +37,14 @@ alias hermes='docker run -it --rm \
   -e HERMES_GID="$(id -g)" \
   ghcr.io/lisp719/hermes-slim-image:latest'
 
+alias hermes-cwd='docker run -it --rm \
+  -v ~/.hermes:/opt/data \
+  -v "$(pwd)":/workspace \
+  -w /workspace \
+  -e HERMES_UID="$(id -u)" \
+  -e HERMES_GID="$(id -g)" \
+  ghcr.io/lisp719/hermes-slim-image:latest'
+
 # alias
 alias fig=docker-compose
 alias lzd="lazydocker"
