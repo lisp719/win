@@ -2,6 +2,7 @@
   become: true
   package:
     name:
+      - bubblewrap
       - curl
       - git
       - htop
