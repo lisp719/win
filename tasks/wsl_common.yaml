@@ -28,6 +28,7 @@
     - fd
     - fzf
     - gh
+    - ghq
     - jj
     - lazydocker
     - lazygit
