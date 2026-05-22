@@ -1,5 +1,4 @@
 # environment variables
-export COPILOT_MODEL="gpt-5-mini"
 export EDITOR="edit.exe"
 
 # fzf
