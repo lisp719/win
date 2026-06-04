@@ -44,6 +44,14 @@
     creates: /home/lisp719/.local/bin/{{ item }}
   when: pkgx_stat.stat.exists
 
+- name: Install packages via pkgx shims (alias)
+  shell: pkgm shim {{ item.pkg }}
+  loop:
+    - { pkg: helix-editor.com, binary: hx }
+  args:
+    creates: /home/lisp719/.local/bin/{{ item.binary }}
+  when: pkgx_stat.stat.exists
+
 - name: Create directories
   file:
     path: "{{ item }}"
@@ -53,6 +61,7 @@
     - ~/.codex
     - ~/.copilot
     - ~/.config/gh
+    - ~/.config/helix
     - ~/.config/jj
     - ~/.config/opencode
     - ~/.config/zellij
@@ -78,6 +87,8 @@
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
   loop:
+    - src: "{{ playbook_dir }}/../settings/common/helix/config.toml"
+      dest: ~/.config/helix/config.toml
     - src: "{{ playbook_dir }}/../settings/common/jj/config.toml"
       dest: ~/.config/jj/config.toml
     - src: "{{ playbook_dir }}/../settings/common/starship.toml"

@@ -1,6 +1,6 @@
 Import-Module posh-git
 
-$env:EDITOR = "edit.exe"
+$env:EDITOR = "hx"
 $env:SHELL = "pwsh.exe"
 $env:YAZI_FILE_ONE = "C:\Program Files\Git\usr\bin\file.exe"
 
