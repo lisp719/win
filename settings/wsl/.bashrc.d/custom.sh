@@ -1,5 +1,6 @@
 # environment variables
-export EDITOR="edit.exe"
+export COLORTERM=truecolor
+export EDITOR="hx"
 
 # fzf
 eval "$(fzf --bash)"

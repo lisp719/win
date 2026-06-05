@@ -1,0 +1,21 @@
+theme = "catppuccin_mocha"
+
+[editor]
+default-line-ending = "lf"
+trim-final-newlines = true
+trim-trailing-whitespace = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.soft-wrap]
+enable = true
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
