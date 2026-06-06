@@ -5,17 +5,21 @@
     {
       "Packages": [
         { "PackageIdentifier": "ajeetdsouza.zoxide" },
-        { "PackageIdentifier": "dbeaver.dbeaver" },
+        { "PackageIdentifier": "DBeaver.DBeaver.Community" },
         { "PackageIdentifier": "Docker.DockerDesktop" },
         { "PackageIdentifier": "Git.Git" },
-        { "PackageIdentifier": "Helix.Helix" },
         { "PackageIdentifier": "GitHub.Copilot" },
+        { "PackageIdentifier": "Helix.Helix" },
         { "PackageIdentifier": "JesseDuffield.lazygit" },
         { "PackageIdentifier": "jj-vcs.jj" },
         { "PackageIdentifier": "junegunn.fzf" },
+        { "PackageIdentifier": "Microsoft.PowerShell" },
+        { "PackageIdentifier": "Microsoft.PowerToys" },
         { "PackageIdentifier": "Microsoft.VisualStudioCode" },
+        { "PackageIdentifier": "sharkdp.bat" },
         { "PackageIdentifier": "Starship.Starship" },
         { "PackageIdentifier": "sxyazi.yazi" },
+        { "PackageIdentifier": "x-motemen.ghq" },
         { "PackageIdentifier": "Zellij.Zellij" }
       ],
       "SourceDetails": {
@@ -28,8 +32,6 @@
     {
       "Packages": [
         { "PackageIdentifier": "9PLM9XGG6VKS", "Comment": "Codex" },
-        { "PackageIdentifier": "9MZ1SNWT0N5D", "Comment": "PowerShell" },
-        { "PackageIdentifier": "XP89DCGQ3K6VLD", "Comment": "PowerToys" },
         { "PackageIdentifier": "9WZDNCRDK3WP", "Comment": "Slack" }
       ],
       "SourceDetails": {
