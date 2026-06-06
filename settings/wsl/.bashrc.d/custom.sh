@@ -33,17 +33,9 @@ alias gibo="docker run --rm simonwhitaker/gibo"
 # hermes alias
 alias hermes='docker run -it --rm \
   -v ~/.hermes:/opt/data \
-  -e HERMES_UID="$(id -u)" \
-  -e HERMES_GID="$(id -g)" \
-  ghcr.io/lisp719/hermes-slim-image:latest'
-
-alias hermes-cwd='docker run -it --rm \
-  -v ~/.hermes:/opt/data \
   -v "$(pwd)":/workspace \
   -w /workspace \
-  -e HERMES_UID="$(id -u)" \
-  -e HERMES_GID="$(id -g)" \
-  ghcr.io/lisp719/hermes-slim-image:latest'
+  nousresearch/hermes-agent'
 
 # alias
 alias fig=docker-compose
