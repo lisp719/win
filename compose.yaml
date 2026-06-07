@@ -1,4 +1,10 @@
 services:
+  archlinux:
+    image: archlinux
+    command: sleep infinity
+    volumes:
+      - .:/workspace
+    working_dir: /workspace/archlinux
   fedora:
     image: fedora
     command: sleep infinity

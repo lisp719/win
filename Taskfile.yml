@@ -6,6 +6,18 @@ tasks:
     cmds:
       - echo 'Hello, world!'
 
+  check-archlinux:
+    desc: "ansible-playbook --check --diff in archlinux"
+    dir: archlinux
+    cmds:
+      - ansible-playbook wsl.yaml --check --diff
+
+  run-archlinux:
+    desc: "ansible-playbook -v in archlinux"
+    dir: archlinux
+    cmds:
+      - ansible-playbook wsl.yaml -v
+
   check-fedora:
     desc: "ansible-playbook --check --diff in fedora"
     dir: fedora

@@ -1,0 +1,8 @@
+- hosts: localhost
+  tasks:
+    - name: Copy .bash_profile
+      copy:
+        src: "{{ playbook_dir }}/settings/.bash_profile"
+        dest: ~/.bash_profile
+
+    - import_tasks: ../tasks/wsl_common.yaml
