@@ -1,0 +1,40 @@
+- hosts: localhost
+  tasks:
+    - name: Update Installed Packages
+      become: true
+      pacman:
+        upgrade: yes
+        update_cache: yes
+
+    - name: Install sudo
+      become: true
+      pacman:
+        name: sudo
+        state: present
+
+    - name: Create working user
+      become: true
+      user:
+        name: lisp719
+        groups: wheel
+        append: yes
+        create_home: yes
+        shell: /bin/bash
+
+    - name: Add user to sudoers
+      become: true
+      copy:
+        dest: /etc/sudoers.d/lisp719
+        content: "lisp719 ALL=(ALL) NOPASSWD: ALL"
+        mode: "0440"
+
+    - name: Set WSL default user
+      become: true
+      copy:
+        dest: /etc/wsl.conf
+        content: |
+          [boot]
+          systemd=true
+
+          [user]
+          default=lisp719

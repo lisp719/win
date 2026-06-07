@@ -27,16 +27,33 @@ OR
 wsl --install -d ubuntu
 ```
 
+OR
+
+```powershell
+wsl --install -d archlinux
+```
+
 # wsl setup
 
 ```bash
 cd fedora
-./setup_wsl.sh
+sh setup_wsl.sh
 ```
 
 OR
 
 ```bash
 cd ubuntu
-./setup_wsl.sh
+sh setup_wsl.sh
+```
+
+OR
+
+```bash
+cd archlinux
+
+sh setup_wsl.sh
+
+su lisp719
+sh setup_wsl.sh
 ```
