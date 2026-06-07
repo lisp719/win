@@ -20,11 +20,11 @@
     },
     {
       "id": "Terminal.NextTab",
-      "keys": "ctrl+pagedown"
+      "keys": "ctrl+pgdn"
     },
     {
       "id": "Terminal.PrevTab",
-      "keys": "ctrl+pageup"
+      "keys": "ctrl+pgup"
     }
   ],
   "launchMode": "maximized",
@@ -57,6 +57,12 @@
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
         "hidden": true,
         "name": "Command Prompt"
+      },
+      {
+        "guid": "{eb6246b1-f6ac-59f1-8fec-2a2c98aaf8c3}",
+        "hidden": false,
+        "name": "archlinux",
+        "source": "Microsoft.WSL"
       }
     ]
   },
