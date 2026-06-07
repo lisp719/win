@@ -1,5 +1,27 @@
 - hosts: localhost
   tasks:
+    - name: Update Installed Packages
+      become: true
+      pacman:
+        upgrade: yes
+        update_cache: yes
+
+    - name: Install Arch Linux packages
+      become: true
+      pacman:
+        name:
+          - bash-completion
+          - less
+          - openssh
+          - which
+        state: latest
+
+    - name: Generate locale
+      become: true
+      locale_gen:
+        name: en_US.UTF-8
+        state: present
+
     - name: Copy .bashrc
       copy:
         src: "{{ playbook_dir }}/settings/.bashrc"
