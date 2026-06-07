@@ -30,13 +30,6 @@ ZELLIJ_AUTO_EXIT=true
 alias dcy="docker run --rm ghcr.io/mogurastore/dcy"
 alias gibo="docker run --rm simonwhitaker/gibo"
 
-# hermes alias
-alias hermes='docker run -it --rm \
-  -v ~/.hermes:/opt/data \
-  -v "$(pwd)":/workspace \
-  -w /workspace \
-  nousresearch/hermes-agent'
-
 # alias
 alias fig=docker-compose
 alias lzd="lazydocker"
