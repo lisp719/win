@@ -32,6 +32,7 @@
     {
       "Packages": [
         { "PackageIdentifier": "9PLM9XGG6VKS", "Comment": "Codex" },
+        { "PackageIdentifier": "9PFXXSHC64H3", "Comment": "Raycast" },
         { "PackageIdentifier": "9WZDNCRDK3WP", "Comment": "Slack" }
       ],
       "SourceDetails": {
