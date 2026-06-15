@@ -75,6 +75,7 @@
     - ~/.codex
     - ~/.copilot
     - ~/.config/gh
+    - ~/.config/glow
     - ~/.config/helix
     - ~/.config/jj
     - ~/.config/opencode
@@ -111,6 +112,8 @@
       dest: ~/.config/zellij/config.kdl
     - src: "{{ playbook_dir }}/../settings/wsl/.config/gh/config.yml"
       dest: ~/.config/gh/config.yml
+    - src: "{{ playbook_dir }}/../settings/wsl/.config/glow/glow.yml"
+      dest: ~/.config/glow/glow.yml
     - src: "{{ playbook_dir }}/../settings/wsl/.config/opencode/opencode.json"
       dest: ~/.config/opencode/opencode.json
 
