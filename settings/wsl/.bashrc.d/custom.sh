@@ -1,6 +1,8 @@
 # environment variables
 export COLORTERM=truecolor
 export EDITOR="hx"
+export HISTCONTROL=ignoredups
+export HISTSIZE=1000
 
 # fzf
 eval "$(fzf --bash)"

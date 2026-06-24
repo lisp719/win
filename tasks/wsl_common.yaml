@@ -66,6 +66,19 @@
     creates: /home/lisp719/.local/bin/{{ item.binary }}
   when: pkgx_stat.stat.exists
 
+- name: Install npm global packages
+  npm:
+    name: "{{ item }}"
+    global: yes
+    state: present
+    executable: ~/.local/bin/npm
+  loop:
+    - "@rivolink/leaf"
+    - pnpm
+    - typescript
+    - typescript-language-server
+    - vscode-langservers-extracted
+
 - name: Create directories
   file:
     path: "{{ item }}"
