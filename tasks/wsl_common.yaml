@@ -78,6 +78,7 @@
     - typescript
     - typescript-language-server
     - vscode-langservers-extracted
+    - yaml-language-server
 
 - name: Create directories
   file:
