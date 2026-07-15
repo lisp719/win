@@ -45,7 +45,7 @@ function sandbox {
 }
 
 function xsearch {
-  Start-Process "https://x.com/search?src=spelling_expansion_revert_click&f=live&q=@inbox OR exclude:hashtags exclude:replies lang:ja ${Args}"
+  Start-Process "https://x.com/search?q=lang:ja ${Args}&f=live"
 }
 
 function ysearch {
