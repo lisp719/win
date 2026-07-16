@@ -8,7 +8,6 @@
         { "PackageIdentifier": "DBeaver.DBeaver.Community" },
         { "PackageIdentifier": "Docker.DockerDesktop" },
         { "PackageIdentifier": "Git.Git" },
-        { "PackageIdentifier": "GitHub.Copilot" },
         { "PackageIdentifier": "Helix.Helix" },
         { "PackageIdentifier": "JesseDuffield.lazygit" },
         { "PackageIdentifier": "jj-vcs.jj" },
@@ -31,7 +30,6 @@
     },
     {
       "Packages": [
-        { "PackageIdentifier": "9PLM9XGG6VKS", "Comment": "Codex" },
         { "PackageIdentifier": "9PFXXSHC64H3", "Comment": "Raycast" },
         { "PackageIdentifier": "9WZDNCRDK3WP", "Comment": "Slack" }
       ],
