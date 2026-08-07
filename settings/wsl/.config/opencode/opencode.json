@@ -3,6 +3,9 @@
   "permission": {
     "bash": {
       "*": "ask"
+    },
+    "edit": {
+      "*": "ask"
     }
   }
 }
