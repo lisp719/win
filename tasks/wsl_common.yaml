@@ -96,7 +96,7 @@
     - ~/.config/jj
     - ~/.config/opencode
     - ~/.config/zellij
-    - ~/workspaces
+    - ~/sandbox
 
 - name: Copy AGENTS.md
   copy:
