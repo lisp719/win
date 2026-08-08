@@ -75,7 +75,8 @@
   loop:
     - "@rivolink/leaf"
     - pnpm
-    - typescript
+    - prettier
+    - typescript@6
     - typescript-language-server
     - vscode-langservers-extracted
     - yaml-language-server
@@ -118,6 +119,8 @@
   loop:
     - src: "{{ playbook_dir }}/../settings/common/helix/config.toml"
       dest: ~/.config/helix/config.toml
+    - src: "{{ playbook_dir }}/../settings/common/helix/languages.toml"
+      dest: ~/.config/helix/languages.toml
     - src: "{{ playbook_dir }}/../settings/common/jj/config.toml"
       dest: ~/.config/jj/config.toml
     - src: "{{ playbook_dir }}/../settings/common/starship.toml"
