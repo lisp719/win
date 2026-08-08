@@ -42,3 +42,7 @@ formatter = { command = "prettier", args = ["--parser", "typescript"] }
 name = "typescript"
 auto-format = true
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
+
+[language-server.typescript-language-server]
+command = "vtsls"
+args = ["--stdio"]
