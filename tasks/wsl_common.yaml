@@ -74,6 +74,7 @@
     executable: ~/.local/bin/npm
   loop:
     - "@rivolink/leaf"
+    - opencode-ai
     - pnpm
     - prettier
     - typescript@6
