@@ -1,3 +1,6 @@
+# mise
+eval "$(mise activate bash)"
+
 # environment variables
 export COLORTERM=truecolor
 export EDITOR="hx"

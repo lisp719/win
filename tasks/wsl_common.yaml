@@ -21,65 +21,10 @@
       - wget
     state: latest
 
-- name: Install pkgx
-  shell: curl https://pkgx.sh | sh
+- name: Install mise
+  shell: curl https://mise.run | sh
   args:
-    creates: /usr/local/bin/pkgx
-
-- name: Check if pkgx file exists
-  stat:
-    path: /usr/local/bin/pkgx
-  register: pkgx_stat
-
-- name: Install packages via pkgx shims
-  shell: pkgm shim {{ item }}
-  loop:
-    - bat
-    - delta
-    - dua
-    - fd
-    - fzf
-    - gh
-    - ghq
-    - gitui
-    - jj
-    - lazydocker
-    - lazygit
-    - node
-    - npm
-    - rg
-    - starship
-    - task
-    - yazi
-    - zellij
-    - zoxide
-  args:
-    creates: /home/lisp719/.local/bin/{{ item }}
-  when: pkgx_stat.stat.exists
-
-- name: Install packages via pkgx shims (alias)
-  shell: pkgm shim {{ item.pkg }}
-  loop:
-    - { pkg: helix-editor.com, binary: hx }
-  args:
-    creates: /home/lisp719/.local/bin/{{ item.binary }}
-  when: pkgx_stat.stat.exists
-
-- name: Install npm global packages
-  npm:
-    name: "{{ item }}"
-    global: yes
-    state: latest
-    executable: ~/.local/bin/npm
-  loop:
-    - "@rivolink/leaf"
-    - opencode-ai
-    - pnpm
-    - prettier
-    - typescript@6
-    - typescript-language-server
-    - vscode-langservers-extracted
-    - yaml-language-server
+    creates: ~/.local/bin/mise
 
 - name: Create directories
   file:
@@ -92,6 +37,7 @@
     - ~/.config/gh
     - ~/.config/helix
     - ~/.config/jj
+    - ~/.config/mise
     - ~/.config/opencode
     - ~/.config/zellij
     - ~/sandbox
@@ -128,6 +74,8 @@
       dest: ~/.config/zellij/config.kdl
     - src: "{{ playbook_dir }}/../settings/wsl/.config/gh/config.yml"
       dest: ~/.config/gh/config.yml
+    - src: "{{ playbook_dir }}/../settings/wsl/.config/mise/config.toml"
+      dest: ~/.config/mise/config.toml
     - src: "{{ playbook_dir }}/../settings/wsl/.config/opencode/opencode.json"
       dest: ~/.config/opencode/opencode.json
 
@@ -140,3 +88,8 @@
       dest: ~/.bashrc.d/custom.sh
     - src: "{{ playbook_dir }}/../settings/wsl/.gitconfig"
       dest: ~/.gitconfig
+
+- name: Install mise tools
+  shell: ~/.local/bin/mise install
+  register: mise_install
+  changed_when: "'all tools are installed' not in mise_install.stderr"
