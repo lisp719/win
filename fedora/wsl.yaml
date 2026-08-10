@@ -12,6 +12,7 @@
       dnf:
         name:
           - "@development-tools"
+          - libatomic
         state: latest
         update_cache: yes
 
