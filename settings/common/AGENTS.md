@@ -7,5 +7,4 @@
 - Conventional Commitsに従う
 - prefixを必ずつける
 - prefixは小文字で書く
-- メッセージは1文字目を大文字で書く
-- 英語で記述する
+- 日本語で記述する
