@@ -1,6 +1,9 @@
-approval_policy = "untrusted"
+approval_policy = "on-request"
 sandbox_mode = "workspace-write"
 personality = "pragmatic"
+
+[sandbox_workspace_write]
+network_access = true
 
 [tui]
 notifications = false
