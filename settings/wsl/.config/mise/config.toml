@@ -1,4 +1,5 @@
 [tools]
+"aqua:pkgxdev/pkgx" = "latest"
 bat = "latest"
 delta = "latest"
 dua = "latest"

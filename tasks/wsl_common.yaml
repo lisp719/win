@@ -26,11 +26,6 @@
   args:
     creates: ~/.local/bin/mise
 
-- name: Install pkgx
-  shell: curl https://pkgx.sh | sh
-  args:
-    creates: /usr/local/bin/pkgx
-
 - name: Create directories
   file:
     path: "{{ item }}"
