@@ -31,6 +31,7 @@
     path: "{{ item }}"
     state: directory
   loop:
+    - ~/.apm
     - ~/.bashrc.d
     - ~/.codex
     - ~/.copilot
@@ -72,6 +73,8 @@
       dest: ~/.config/starship.toml
     - src: "{{ playbook_dir }}/../settings/common/zellij/config.kdl"
       dest: ~/.config/zellij/config.kdl
+    - src: "{{ playbook_dir }}/../settings/wsl/.apm/apm.yml"
+      dest: ~/.apm/apm.yml
     - src: "{{ playbook_dir }}/../settings/wsl/.config/gh/config.yml"
       dest: ~/.config/gh/config.yml
     - src: "{{ playbook_dir }}/../settings/wsl/.config/mise/config.toml"

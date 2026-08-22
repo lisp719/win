@@ -1,0 +1,15 @@
+name: lisp719
+version: 1.0.0
+description: APM project for lisp719
+author: lisp719
+# Which agent platforms to deploy to (uncomment to pin):
+# targets:
+#   - copilot
+#   - claude
+
+dependencies:
+  apm:
+    - mattpocock/skills
+  mcp: []
+includes: auto
+scripts: {}
