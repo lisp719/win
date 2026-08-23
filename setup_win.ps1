@@ -27,6 +27,10 @@ $configs = @(
     dst = "~/AppData/Roaming/Zellij/config/config.kdl"
   }
   @{
+    src = "./settings/windows/.config/mise/config.toml"
+    dst = "~/.config/mise/config.toml"
+  }
+  @{
     src = "./settings/windows/.gitconfig"
     dst = "~/.gitconfig"
   }

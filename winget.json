@@ -4,22 +4,13 @@
   "Sources": [
     {
       "Packages": [
-        { "PackageIdentifier": "ajeetdsouza.zoxide" },
         { "PackageIdentifier": "DBeaver.DBeaver.Community" },
         { "PackageIdentifier": "Docker.DockerDesktop" },
         { "PackageIdentifier": "Git.Git" },
-        { "PackageIdentifier": "Helix.Helix" },
-        { "PackageIdentifier": "JesseDuffield.lazygit" },
-        { "PackageIdentifier": "jj-vcs.jj" },
-        { "PackageIdentifier": "junegunn.fzf" },
+        { "PackageIdentifier": "jdx.mise" },
         { "PackageIdentifier": "Microsoft.PowerShell" },
         { "PackageIdentifier": "Microsoft.PowerToys" },
-        { "PackageIdentifier": "Microsoft.VisualStudioCode" },
-        { "PackageIdentifier": "sharkdp.bat" },
-        { "PackageIdentifier": "Starship.Starship" },
-        { "PackageIdentifier": "sxyazi.yazi" },
-        { "PackageIdentifier": "x-motemen.ghq" },
-        { "PackageIdentifier": "Zellij.Zellij" }
+        { "PackageIdentifier": "Microsoft.VisualStudioCode" }
       ],
       "SourceDetails": {
         "Argument": "https://winget.azureedge.net/cache",
