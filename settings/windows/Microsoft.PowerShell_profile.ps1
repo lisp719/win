@@ -7,6 +7,8 @@ $env:YAZI_FILE_ONE = "C:\Program Files\Git\usr\bin\file.exe"
 Set-Alias lzg lazygit
 Set-PSReadLineOption -BellStyle None -EditMode Emacs
 
+(&mise activate pwsh) | Out-String | Invoke-Expression
+
 Invoke-Expression (&starship init powershell)
 
 jj util completion power-shell | Out-String | Invoke-Expression
