@@ -1,17 +1,28 @@
-Import-Module posh-git
+if (Get-Module -ListAvailable -Name posh-git) {
+  Import-Module posh-git -ErrorAction SilentlyContinue
+}
 
 $env:EDITOR = "hx"
 $env:SHELL = "pwsh.exe"
-$env:YAZI_FILE_ONE = "C:\Program Files\Git\usr\bin\file.exe"
+
+if (Test-Path "C:\Program Files\Git\usr\bin\file.exe") {
+  $env:YAZI_FILE_ONE = "C:\Program Files\Git\usr\bin\file.exe"
+}
 
 Set-Alias lzg lazygit
 Set-PSReadLineOption -BellStyle None -EditMode Emacs
 
-(&mise activate pwsh) | Out-String | Invoke-Expression
+if (Get-Command mise -ErrorAction SilentlyContinue) {
+  (&mise activate pwsh) | Out-String | Invoke-Expression
+}
 
-Invoke-Expression (&starship init powershell)
+if (Get-Command starship -ErrorAction SilentlyContinue) {
+  Invoke-Expression (&starship init powershell)
+}
 
-jj util completion power-shell | Out-String | Invoke-Expression
+if (Get-Command jj -ErrorAction SilentlyContinue) {
+  jj util completion power-shell | Out-String | Invoke-Expression
+}
 
 function phi {
   Write-Output "https://via.placeholder.com/${Args}"
@@ -55,4 +66,6 @@ function ysearch {
 }
 
 # Because the destination will not be saved, write it towards the end.
-Invoke-Expression (& { (zoxide init powershell | Out-String) })
+if (Get-Command zoxide -ErrorAction SilentlyContinue) {
+  Invoke-Expression (& { (zoxide init powershell | Out-String) })
+}
