@@ -46,9 +46,5 @@ $configs = @(
     src = "./settings/windows/lazygit/config.yml"
     dst = "~/AppData/Local/lazygit/config.yml"
   }
-  @{
-    src = "./settings/windows/terminal/settings.json"
-    dst = "~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json"
-  }
 )
 $configs | ForEach-Object { Copy-Item $_.src $_.dst }
