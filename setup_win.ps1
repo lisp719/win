@@ -19,16 +19,16 @@ $configs = @(
     dst = "~/AppData/Roaming/jj/config.toml"
   }
   @{
+    src = "./settings/common/mise/config.toml"
+    dst = "~/.config/mise/config.toml"
+  }
+  @{
     src = "./settings/common/starship.toml"
     dst = "~/.config/starship.toml"
   }
   @{
     src = "./settings/common/zellij/config.kdl"
     dst = "~/AppData/Roaming/Zellij/config/config.kdl"
-  }
-  @{
-    src = "./settings/windows/.config/mise/config.toml"
-    dst = "~/.config/mise/config.toml"
   }
   @{
     src = "./settings/windows/.gitconfig"

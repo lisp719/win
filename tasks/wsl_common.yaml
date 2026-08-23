@@ -69,6 +69,8 @@
       dest: ~/.config/helix/languages.toml
     - src: "{{ playbook_dir }}/../settings/common/jj/config.toml"
       dest: ~/.config/jj/config.toml
+    - src: "{{ playbook_dir }}/../settings/common/mise/config.toml"
+      dest: ~/.config/mise/config.toml
     - src: "{{ playbook_dir }}/../settings/common/starship.toml"
       dest: ~/.config/starship.toml
     - src: "{{ playbook_dir }}/../settings/common/zellij/config.kdl"
@@ -77,8 +79,6 @@
       dest: ~/.apm/apm.yml
     - src: "{{ playbook_dir }}/../settings/wsl/.config/gh/config.yml"
       dest: ~/.config/gh/config.yml
-    - src: "{{ playbook_dir }}/../settings/wsl/.config/mise/config.toml"
-      dest: ~/.config/mise/config.toml
     - src: "{{ playbook_dir }}/../settings/wsl/.config/opencode/opencode.json"
       dest: ~/.config/opencode/opencode.json
 
