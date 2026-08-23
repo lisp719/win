@@ -1,0 +1,37 @@
+[tools]
+# 共通
+bat = "latest"
+eza = "latest"
+fzf = "latest"
+ghq = "latest"
+helix = "latest"
+jj = "latest"
+jjui = "latest"
+lazygit = "latest"
+ripgrep = "latest"
+starship = "latest"
+yazi = "latest"
+zellij = "latest"
+zoxide = "latest"
+
+# WSL(Linux)限定
+apm = { version = "latest", os = ["linux"] }
+"aqua:pkgxdev/pkgx" = { version = "latest", os = ["linux"] }
+delta = { version = "latest", os = ["linux"] }
+dua = { version = "latest", os = ["linux"] }
+fd = { version = "latest", os = ["linux"] }
+github-cli = { version = "latest", os = ["linux"] }
+"github:RivoLink/leaf" = { version = "latest", os = ["linux"] }
+gitui = { version = "latest", os = ["linux"] }
+jq = { version = "latest", os = ["linux"] }
+lazydocker = { version = "latest", os = ["linux"] }
+node = { version = "latest", os = ["linux"] }
+"npm:@vtsls/language-server" = { version = "latest", os = ["linux"] }
+"npm:pnpm" = { version = "latest", os = ["linux"] }
+"npm:prettier" = { version = "latest", os = ["linux"] }
+"npm:vscode-langservers-extracted" = { version = "latest", os = ["linux"] }
+"npm:yaml-language-server" = { version = "latest", os = ["linux"] }
+opencode = { version = "latest", os = ["linux"] }
+task = { version = "latest", os = ["linux"] }
+usage = { version = "latest", os = ["linux"] }
+xh = { version = "latest", os = ["linux"] }
