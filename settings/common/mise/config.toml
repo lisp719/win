@@ -25,6 +25,7 @@ github-cli = { version = "latest", os = ["linux"] }
 gitui = { version = "latest", os = ["linux"] }
 jq = { version = "latest", os = ["linux"] }
 lazydocker = { version = "latest", os = ["linux"] }
+micro = { version = "latest", os = ["linux"] }
 node = { version = "latest", os = ["linux"] }
 "npm:@vtsls/language-server" = { version = "latest", os = ["linux"] }
 "npm:pnpm" = { version = "latest", os = ["linux"] }
