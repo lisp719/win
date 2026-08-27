@@ -89,6 +89,12 @@
     - src: "{{ playbook_dir }}/../settings/wsl/.gitconfig"
       dest: ~/.gitconfig
 
+- name: Copy templates directory
+  copy:
+    src: "{{ playbook_dir }}/../settings/wsl/.templates/"
+    dest: ~/.templates/
+    mode: preserve
+
 - name: Install mise tools
   shell: ~/.local/bin/mise install
   register: mise_install
