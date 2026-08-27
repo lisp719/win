@@ -22,6 +22,7 @@
     {
       "Packages": [
         { "PackageIdentifier": "9PFXXSHC64H3", "Comment": "Raycast" },
+        { "PackageIdentifier": "9PLM9XGG6VKS", "Comment": "ChatGPT" },
         { "PackageIdentifier": "9WZDNCRDK3WP", "Comment": "Slack" }
       ],
       "SourceDetails": {
