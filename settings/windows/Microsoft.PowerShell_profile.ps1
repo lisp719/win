@@ -12,16 +12,20 @@ if (Test-Path "C:\Program Files\Git\usr\bin\file.exe") {
 Set-Alias lzg lazygit
 Set-PSReadLineOption -BellStyle None -EditMode Emacs
 
+if (Get-Command gh -ErrorAction SilentlyContinue) {
+  Invoke-Expression -Command $(gh completion -s powershell | Out-String)
+}
+
+if (Get-Command jj -ErrorAction SilentlyContinue) {
+  jj util completion power-shell | Out-String | Invoke-Expression
+}
+
 if (Get-Command mise -ErrorAction SilentlyContinue) {
   (&mise activate pwsh) | Out-String | Invoke-Expression
 }
 
 if (Get-Command starship -ErrorAction SilentlyContinue) {
   Invoke-Expression (&starship init powershell)
-}
-
-if (Get-Command jj -ErrorAction SilentlyContinue) {
-  jj util completion power-shell | Out-String | Invoke-Expression
 }
 
 function phi {

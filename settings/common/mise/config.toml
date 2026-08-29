@@ -4,6 +4,7 @@ bat = "latest"
 eza = "latest"
 fzf = "latest"
 ghq = "latest"
+github-cli = "latest"
 helix = "latest"
 jj = "latest"
 jjui = "latest"
@@ -21,7 +22,6 @@ apm = { version = "latest", os = ["linux"] }
 delta = { version = "latest", os = ["linux"] }
 dua = { version = "latest", os = ["linux"] }
 fd = { version = "latest", os = ["linux"] }
-github-cli = { version = "latest", os = ["linux"] }
 "github:RivoLink/leaf" = { version = "latest", os = ["linux"] }
 gitui = { version = "latest", os = ["linux"] }
 jq = { version = "latest", os = ["linux"] }
