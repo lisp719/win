@@ -1,31 +1,24 @@
 [tools]
-# 共通
+apm = { version = "latest", os = ["linux"] }
+"aqua:pkgxdev/pkgx" = { version = "latest", os = ["linux"] }
 bat = "latest"
+codex = "latest"
+delta = { version = "latest", os = ["linux"] }
+dua = { version = "latest", os = ["linux"] }
 eza = "latest"
+fd = { version = "latest", os = ["linux"] }
 fzf = "latest"
 ghq = "latest"
 github-cli = "latest"
+"github:RivoLink/leaf" = { version = "latest", os = ["linux"] }
+gitui = { version = "latest", os = ["linux"] }
 helix = "latest"
 jj = "latest"
 jjui = "latest"
-lazygit = "latest"
-micro = "latest"
-ripgrep = "latest"
-starship = "latest"
-yazi = "latest"
-zellij = "latest"
-zoxide = "latest"
-
-# WSL(Linux)限定
-apm = { version = "latest", os = ["linux"] }
-"aqua:pkgxdev/pkgx" = { version = "latest", os = ["linux"] }
-delta = { version = "latest", os = ["linux"] }
-dua = { version = "latest", os = ["linux"] }
-fd = { version = "latest", os = ["linux"] }
-"github:RivoLink/leaf" = { version = "latest", os = ["linux"] }
-gitui = { version = "latest", os = ["linux"] }
 jq = { version = "latest", os = ["linux"] }
 lazydocker = { version = "latest", os = ["linux"] }
+lazygit = "latest"
+micro = "latest"
 node = { version = "latest", os = ["linux"] }
 "npm:@vtsls/language-server" = { version = "latest", os = ["linux"] }
 "npm:pnpm" = { version = "latest", os = ["linux"] }
@@ -33,6 +26,11 @@ node = { version = "latest", os = ["linux"] }
 "npm:vscode-langservers-extracted" = { version = "latest", os = ["linux"] }
 "npm:yaml-language-server" = { version = "latest", os = ["linux"] }
 opencode = { version = "latest", os = ["linux"] }
+ripgrep = "latest"
+starship = "latest"
 task = { version = "latest", os = ["linux"] }
 usage = { version = "latest", os = ["linux"] }
 xh = { version = "latest", os = ["linux"] }
+yazi = "latest"
+zellij = "latest"
+zoxide = "latest"
