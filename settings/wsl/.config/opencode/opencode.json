@@ -21,6 +21,7 @@
       "find *": "allow",
       "grep *": "allow",
       "head *": "allow",
+      "jq *": "allow",
       "ls *": "allow",
       "rg *": "allow",
       "sed *": "allow",
