@@ -21,11 +21,11 @@ lazygit = "latest"
 micro = "latest"
 node = { version = "latest", os = ["linux"] }
 "npm:@vtsls/language-server" = { version = "latest", os = ["linux"] }
-"npm:pnpm" = { version = "latest", os = ["linux"] }
 "npm:prettier" = { version = "latest", os = ["linux"] }
 "npm:vscode-langservers-extracted" = { version = "latest", os = ["linux"] }
 "npm:yaml-language-server" = { version = "latest", os = ["linux"] }
 opencode = { version = "latest", os = ["linux"] }
+pnpm = { version = "latest", os = ["linux"] }
 ripgrep = "latest"
 starship = "latest"
 task = { version = "latest", os = ["linux"] }
