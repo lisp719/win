@@ -11,6 +11,7 @@ fzf = "latest"
 ghq = "latest"
 github-cli = "latest"
 "github:RivoLink/leaf" = { version = "latest", os = ["linux"] }
+"github:mogurastore/mdots" = "latest"
 "github:zyedidia/eget" = "latest"
 gitui = { version = "latest", os = ["linux"] }
 helix = "latest"
