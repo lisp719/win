@@ -30,6 +30,7 @@ opencode = { version = "latest", os = ["linux"] }
 pnpm = { version = "latest", os = ["linux"] }
 ripgrep = "latest"
 starship = "latest"
+taplo = "latest"
 task = { version = "latest", os = ["linux"] }
 usage = { version = "latest", os = ["linux"] }
 xh = { version = "latest", os = ["linux"] }
