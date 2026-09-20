@@ -1,3 +1,8 @@
+# CLIはmiseでインストールしているため、補完や初期化より先に先頭でアクティブ化する。
+if (Get-Command mise -ErrorAction SilentlyContinue) {
+  (&mise activate pwsh) | Out-String | Invoke-Expression
+}
+
 if (Get-Module -ListAvailable -Name posh-git) {
   Import-Module posh-git -ErrorAction SilentlyContinue
 }
@@ -18,10 +23,6 @@ if (Get-Command gh -ErrorAction SilentlyContinue) {
 
 if (Get-Command jj -ErrorAction SilentlyContinue) {
   jj util completion power-shell | Out-String | Invoke-Expression
-}
-
-if (Get-Command mise -ErrorAction SilentlyContinue) {
-  (&mise activate pwsh) | Out-String | Invoke-Expression
 }
 
 if (Get-Command starship -ErrorAction SilentlyContinue) {
