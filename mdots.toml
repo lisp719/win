@@ -15,6 +15,9 @@ src = "dotfiles/win/.wslconfig"
 [targets.win."~/AppData/Local/lazygit/config.yml"]
 src = "dotfiles/win/AppData/Local/lazygit/config.yml"
 
+[targets.win."~/AppData/Roaming/Zellij/config/config.kdl"]
+src = "dotfiles/win/AppData/Roaming/Zellij/config/config.kdl"
+
 [targets.win."~/AppData/Roaming/helix/config.toml"]
 src = "dotfiles/win/AppData/Roaming/helix/config.toml"
 
@@ -23,9 +26,6 @@ src = "dotfiles/win/AppData/Roaming/jj/config.toml"
 
 [targets.win."~/AppData/Roaming/jjui/config.toml"]
 src = "dotfiles/win/AppData/Roaming/jjui/config.toml"
-
-[targets.win."~/AppData/Roaming/Zellij/config/config.kdl"]
-src = "dotfiles/win/AppData/Roaming/Zellij/config/config.kdl"
 
 [targets.wsl."~/.bashrc.d/custom.sh"]
 src = "dotfiles/wsl/.bashrc.d/custom.sh"
