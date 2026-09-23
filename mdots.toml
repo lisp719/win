@@ -21,6 +21,9 @@ src = "dotfiles/win/AppData/Roaming/helix/config.toml"
 [targets.win."~/AppData/Roaming/jj/config.toml"]
 src = "dotfiles/win/AppData/Roaming/jj/config.toml"
 
+[targets.win."~/AppData/Roaming/jjui/config.toml"]
+src = "dotfiles/win/AppData/Roaming/jjui/config.toml"
+
 [targets.win."~/AppData/Roaming/Zellij/config/config.kdl"]
 src = "dotfiles/win/AppData/Roaming/Zellij/config/config.kdl"
 
