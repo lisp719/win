@@ -4,7 +4,7 @@ apm = { version = "latest", os = ["linux"] }
 bat = "latest"
 codex = "latest"
 delta = { version = "latest", os = ["linux"] }
-dua = { version = "latest", os = ["linux"] }
+dua = "latest"
 eza = "latest"
 fd = { version = "latest", os = ["linux"] }
 fzf = "latest"
