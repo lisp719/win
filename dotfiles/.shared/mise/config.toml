@@ -15,6 +15,7 @@ github-cli = "latest"
 "github:zyedidia/eget" = "latest"
 gitui = { version = "latest", os = ["linux"] }
 helix = "latest"
+herdr = { version = "latest", os = ["linux"] }
 jj = "latest"
 jjui = "latest"
 jq = { version = "latest", os = ["linux"] }
