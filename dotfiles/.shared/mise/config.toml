@@ -1,25 +1,25 @@
 [tools]
-apm = { version = "latest", os = ["linux"] }
+apm = "latest"
 "aqua:pkgxdev/pkgx" = { version = "latest", os = ["linux"] }
 bat = "latest"
 codex = "latest"
-delta = { version = "latest", os = ["linux"] }
+delta = "latest"
 dua = "latest"
 eza = "latest"
-fd = { version = "latest", os = ["linux"] }
+fd = "latest"
 fzf = "latest"
 ghq = "latest"
 github-cli = "latest"
-"github:RivoLink/leaf" = { version = "latest", os = ["linux"] }
+"github:RivoLink/leaf" = "latest"
 "github:mogurastore/mdots" = "latest"
 "github:zyedidia/eget" = "latest"
-gitui = { version = "latest", os = ["linux"] }
+gitui = "latest"
 helix = "latest"
 herdr = "latest"
 jj = "latest"
 jjui = "latest"
-jq = { version = "latest", os = ["linux"] }
-lazydocker = { version = "latest", os = ["linux"] }
+jq = "latest"
+lazydocker = "latest"
 lazygit = "latest"
 micro = "latest"
 node = { version = "latest", os = ["linux"] }
@@ -27,14 +27,14 @@ node = { version = "latest", os = ["linux"] }
 "npm:prettier" = { version = "latest", os = ["linux"] }
 "npm:vscode-langservers-extracted" = { version = "latest", os = ["linux"] }
 "npm:yaml-language-server" = { version = "latest", os = ["linux"] }
-opencode = { version = "latest", os = ["linux"] }
+opencode = "latest"
 pnpm = { version = "latest", os = ["linux"] }
 ripgrep = "latest"
 starship = "latest"
 taplo = "latest"
-task = { version = "latest", os = ["linux"] }
-usage = { version = "latest", os = ["linux"] }
-xh = { version = "latest", os = ["linux"] }
+task = "latest"
+usage = "latest"
+xh = "latest"
 yazi = "latest"
 zellij = "latest"
 zoxide = "latest"
