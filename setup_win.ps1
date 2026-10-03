@@ -7,7 +7,7 @@ Install-Module posh-git -Scope CurrentUser -Force
 # config files
 $configs = @(
   @{
-    src = "./settings/windows/Microsoft.PowerShell_profile.ps1"
+    src = "./dotfiles/manual/Microsoft.PowerShell_profile.ps1"
     dst = $PROFILE
   }
 )
