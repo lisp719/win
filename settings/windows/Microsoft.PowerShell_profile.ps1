@@ -10,6 +10,10 @@ if (Get-Module -ListAvailable -Name posh-git) {
 $env:EDITOR = "hx"
 $env:SHELL = "pwsh.exe"
 
+if (Get-Command gh -ErrorAction SilentlyContinue) {
+  $env:GITHUB_TOKEN = gh auth token
+}
+
 if (Test-Path "C:\Program Files\Git\usr\bin\file.exe") {
   $env:YAZI_FILE_ONE = "C:\Program Files\Git\usr\bin\file.exe"
 }
