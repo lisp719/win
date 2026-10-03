@@ -1,0 +1,10 @@
+onboarding = false
+
+[keys]
+prefix = "ctrl+g"
+
+[terminal]
+default_shell = "pwsh.exe"
+
+[ui]
+prompt_new_tab_name = false
