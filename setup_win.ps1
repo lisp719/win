@@ -7,44 +7,8 @@ Install-Module posh-git -Scope CurrentUser -Force
 # config files
 $configs = @(
   @{
-    src = "./settings/common/AGENTS.md"
-    dst = "~/.copilot/copilot-instructions.md"
-  }
-  @{
-    src = "./settings/common/helix/config.toml"
-    dst = "~/AppData/Roaming/helix/config.toml"
-  }
-  @{
-    src = "./settings/common/jj/config.toml"
-    dst = "~/AppData/Roaming/jj/config.toml"
-  }
-  @{
-    src = "./settings/common/mise/config.toml"
-    dst = "~/.config/mise/config.toml"
-  }
-  @{
-    src = "./settings/common/starship.toml"
-    dst = "~/.config/starship.toml"
-  }
-  @{
-    src = "./settings/common/zellij/config.kdl"
-    dst = "~/AppData/Roaming/Zellij/config/config.kdl"
-  }
-  @{
-    src = "./settings/windows/.gitconfig"
-    dst = "~/.gitconfig"
-  }
-  @{
-    src = "./settings/windows/.wslconfig"
-    dst = "~/.wslconfig"
-  }
-  @{
     src = "./settings/windows/Microsoft.PowerShell_profile.ps1"
     dst = $PROFILE
-  }
-  @{
-    src = "./settings/windows/lazygit/config.yml"
-    dst = "~/AppData/Local/lazygit/config.yml"
   }
 )
 $configs | ForEach-Object { Copy-Item $_.src $_.dst }
