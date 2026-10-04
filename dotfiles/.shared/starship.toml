@@ -190,7 +190,7 @@ symbol = "opa "
 symbol = "openstack "
 
 [os]
-disabled = false
+disabled = true
 
 [os.symbols]
 AIX = "aix "
