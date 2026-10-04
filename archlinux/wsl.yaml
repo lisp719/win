@@ -22,9 +22,4 @@
         name: en_US.UTF-8
         state: present
 
-    - name: Copy .bashrc
-      copy:
-        src: "{{ playbook_dir }}/settings/.bashrc"
-        dest: ~/.bashrc
-
     - import_tasks: ../tasks/wsl_common.yaml

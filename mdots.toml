@@ -1,5 +1,8 @@
 default_target = "base"
 
+[targets.archlinux."~/.bashrc"]
+src = "dotfiles/archlinux/.bashrc"
+
 [targets.win."~/.config/mise/config.toml"]
 src = "dotfiles/.shared/mise/config.toml"
 
