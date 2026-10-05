@@ -9,9 +9,6 @@ src = "dotfiles/.shared/mise/config.toml"
 [targets.win."~/.config/starship.toml"]
 src = "dotfiles/.shared/starship.toml"
 
-[targets.win."~/.config/yazi/yazi.toml"]
-src = "dotfiles/.shared/yazi/yazi.toml"
-
 [targets.win."~/.gitconfig"]
 src = "dotfiles/win/.gitconfig"
 
@@ -35,6 +32,9 @@ src = "dotfiles/.shared/jj/config.toml"
 
 [targets.win."~/AppData/Roaming/jjui/config.toml"]
 src = "dotfiles/win/AppData/Roaming/jjui/config.toml"
+
+[targets.win."~/AppData/Roaming/yazi/config/yazi.toml"]
+src = "dotfiles/.shared/yazi/yazi.toml"
 
 [targets.wsl."~/.bashrc.d/custom.sh"]
 src = "dotfiles/wsl/.bashrc.d/custom.sh"
