@@ -9,6 +9,9 @@ src = "dotfiles/.shared/mise/config.toml"
 [targets.win."~/.config/starship.toml"]
 src = "dotfiles/.shared/starship.toml"
 
+[targets.win."~/.config/yazi/yazi.toml"]
+src = "dotfiles/.shared/yazi/yazi.toml"
+
 [targets.win."~/.gitconfig"]
 src = "dotfiles/win/.gitconfig"
 
@@ -69,6 +72,9 @@ src = "dotfiles/wsl/.config/opencode/opencode.json"
 
 [targets.wsl."~/.config/starship.toml"]
 src = "dotfiles/.shared/starship.toml"
+
+[targets.wsl."~/.config/yazi/yazi.toml"]
+src = "dotfiles/.shared/yazi/yazi.toml"
 
 [targets.wsl."~/.config/zellij/config.kdl"]
 src = "dotfiles/.shared/zellij/config.kdl"
