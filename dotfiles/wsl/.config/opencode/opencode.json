@@ -33,9 +33,7 @@
 
       "curl *": "deny",
       "git *": "deny",
-      "node *": "deny",
-      "python *": "deny",
-      "python3 *": "deny"
+      "node *": "deny"
     },
     "edit": {
       "*": "allow"
