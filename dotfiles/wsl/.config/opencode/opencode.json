@@ -29,11 +29,7 @@
       "sort *": "allow",
       "tail *": "allow",
       "uniq *": "allow",
-      "wc *": "allow",
-
-      "curl *": "deny",
-      "git *": "deny",
-      "node *": "deny"
+      "wc *": "allow"
     },
     "edit": {
       "*": "allow"
