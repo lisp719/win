@@ -28,8 +28,11 @@
       "sed *": "allow",
       "sort *": "allow",
       "tail *": "allow",
+      "true": "allow",
       "uniq *": "allow",
-      "wc *": "allow"
+      "wc *": "allow",
+
+      "git *": "deny"
     },
     "edit": {
       "*": "allow"
