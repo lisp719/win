@@ -13,6 +13,7 @@
         name:
           - "@development-tools"
           - libatomic
+          - pulseaudio-utils
         state: latest
         update_cache: yes
 
