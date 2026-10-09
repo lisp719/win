@@ -3,6 +3,9 @@ default_target = "base"
 [targets.archlinux."~/.bashrc"]
 src = "dotfiles/archlinux/.bashrc"
 
+[targets.win."~/.config/hunk/config.toml"]
+src = "dotfiles/.shared/hunk/config.toml"
+
 [targets.win."~/.config/mise/config.toml"]
 src = "dotfiles/.shared/mise/config.toml"
 
@@ -59,7 +62,7 @@ src = "dotfiles/wsl/.config/helix/languages.toml"
 src = "dotfiles/wsl/.config/herdr/config.toml"
 
 [targets.wsl."~/.config/hunk/config.toml"]
-src = "dotfiles/wsl/.config/hunk/config.toml"
+src = "dotfiles/.shared/hunk/config.toml"
 
 [targets.wsl."~/.config/jj/config.toml"]
 src = "dotfiles/.shared/jj/config.toml"
