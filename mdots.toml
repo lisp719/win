@@ -58,6 +58,9 @@ src = "dotfiles/wsl/.config/helix/languages.toml"
 [targets.wsl."~/.config/herdr/config.toml"]
 src = "dotfiles/wsl/.config/herdr/config.toml"
 
+[targets.wsl."~/.config/hunk/config.toml"]
+src = "dotfiles/wsl/.config/hunk/config.toml"
+
 [targets.wsl."~/.config/jj/config.toml"]
 src = "dotfiles/.shared/jj/config.toml"
 
