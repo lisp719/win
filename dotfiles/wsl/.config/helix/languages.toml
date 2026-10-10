@@ -35,6 +35,7 @@ formatter = { command = "prettier", args = ["--parser", "markdown"] }
 
 [[language]]
 name = "text"
+scope = "source.text"
 file-types = ["rules"]
 
 [[language]]
