@@ -1,21 +1,21 @@
 # win
 
-## windows
+## Windows
 
-What to do manually.
+手動で行うこと。
 
-- windows update
-- microsoft store update
+- Windows Update
+- Microsoft Store の更新
 
-## win setup
+## Windows のセットアップ
 
-Run with administrator rights.
+管理者権限で実行する。
 
 ```powershell
 ./bootstrap_win.ps1
 ```
 
-# wsl
+# WSL
 
 ```powershell
 wsl --install -d FedoraLinux-42
@@ -33,27 +33,15 @@ OR
 wsl --install -d archlinux
 ```
 
-# wsl setup
+# WSL のセットアップ
 
 ```bash
-cd fedora
-sh setup_wsl.sh
+sh bootstrap_wsl.sh
 ```
 
-OR
+archlinux の場合は root で実行したあと、以下も実行する。
 
 ```bash
-cd ubuntu
-sh setup_wsl.sh
-```
-
-OR
-
-```bash
-cd archlinux
-
-sh setup_wsl.sh
-
 su lisp719
-sh setup_wsl.sh
+sh bootstrap_wsl.sh
 ```
