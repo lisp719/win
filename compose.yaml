@@ -4,13 +4,13 @@ services:
     command: sleep infinity
     volumes:
       - .:/workspace
-    working_dir: /workspace/archlinux
+    working_dir: /workspace
   fedora:
     image: fedora
     command: sleep infinity
     volumes:
       - .:/workspace
-    working_dir: /workspace/fedora
+    working_dir: /workspace
   ubuntu:
     build:
       context: .
@@ -18,4 +18,4 @@ services:
     command: sleep infinity
     volumes:
       - .:/workspace
-    working_dir: /workspace/ubuntu
+    working_dir: /workspace
