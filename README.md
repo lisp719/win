@@ -12,7 +12,7 @@ What to do manually.
 Run with administrator rights.
 
 ```powershell
-./setup_win.ps1
+./bootstrap_win.ps1
 ```
 
 # wsl
