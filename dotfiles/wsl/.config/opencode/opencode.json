@@ -11,6 +11,7 @@
 
       "jj bookmark create *": "allow",
       "jj bookmark list *": "allow",
+      "jj commit *": "allow",
       "jj describe *": "allow",
       "jj diff *": "allow",
       "jj file list *": "allow",
@@ -20,12 +21,14 @@
       "jj status *": "allow",
 
       "cat *": "allow",
+      "date *": "allow",
       "echo *": "allow",
       "find *": "allow",
       "grep *": "allow",
       "head *": "allow",
       "jq *": "allow",
       "ls *": "allow",
+      "mkdir *": "allow",
       "rg *": "allow",
       "sed *": "allow",
       "sort *": "allow",
