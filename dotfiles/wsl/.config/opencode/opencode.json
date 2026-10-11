@@ -9,7 +9,9 @@
       "gh pr list *": "allow",
       "gh pr view *": "allow",
 
+      "jj bookmark create *": "allow",
       "jj bookmark list *": "allow",
+      "jj describe *": "allow",
       "jj diff *": "allow",
       "jj file list *": "allow",
       "jj file show *": "allow",
