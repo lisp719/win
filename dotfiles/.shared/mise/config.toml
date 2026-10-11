@@ -2,7 +2,7 @@
 apm = "latest"
 "aqua:pkgxdev/pkgx" = { version = "latest", os = ["linux"] }
 bat = "latest"
-codex = "latest"
+codex = { version = "latest", os = ["linux"] }
 delta = "latest"
 dua = "latest"
 eza = "latest"
@@ -29,7 +29,7 @@ node = { version = "latest", os = ["linux"] }
 "npm:prettier" = { version = "latest", os = ["linux"] }
 "npm:vscode-langservers-extracted" = { version = "latest", os = ["linux"] }
 "npm:yaml-language-server" = { version = "latest", os = ["linux"] }
-opencode = "latest"
+opencode = { version = "latest", os = ["linux"] }
 pnpm = { version = "latest", os = ["linux"] }
 ripgrep = "latest"
 starship = "latest"
