@@ -5,5 +5,8 @@ personality = "pragmatic"
 [sandbox_workspace_write]
 network_access = true
 
+[shell_environment_policy]
+ignore_default_excludes = false
+
 [tui]
 notifications = false
