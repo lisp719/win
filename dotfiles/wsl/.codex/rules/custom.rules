@@ -1,0 +1,19 @@
+prefix_rule(
+  pattern = ["gh", "pr", ["edit", "merge"]],
+  decision = "prompt",
+)
+
+prefix_rule(
+  pattern = ["git"],
+  decision = "forbidden",
+)
+
+prefix_rule(
+  pattern = ["jj", ["diff", "st", "status"]],
+  decision = "allow",
+)
+
+prefix_rule(
+  pattern = ["rm"],
+  decision = "prompt",
+)
