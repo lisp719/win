@@ -2,7 +2,7 @@
 apm = "latest"
 "aqua:pkgxdev/pkgx" = { version = "latest", os = ["linux"] }
 bat = "latest"
-codex = { version = "latest", os = ["linux"] }
+codex = "latest"
 delta = "latest"
 dua = "latest"
 eza = "latest"

@@ -3,6 +3,16 @@ default_target = "base"
 [targets.archlinux."~/.bashrc"]
 src = "dotfiles/archlinux/.bashrc"
 
+[targets.win."~/.codex/AGENTS.md"]
+src = "dotfiles/.shared/codex/AGENTS.md"
+
+[targets.win."~/.codex/config.toml"]
+src = "dotfiles/.shared/codex/config.toml"
+override = false
+
+[targets.win."~/.codex/rules/custom.rules"]
+src = "dotfiles/.shared/codex/rules/custom.rules"
+
 [targets.win."~/.config/hunk/config.toml"]
 src = "dotfiles/.shared/hunk/config.toml"
 
@@ -43,14 +53,14 @@ src = "dotfiles/.shared/yazi/yazi.toml"
 src = "dotfiles/wsl/.bashrc.d/custom.sh"
 
 [targets.wsl."~/.codex/AGENTS.md"]
-src = "dotfiles/wsl/.codex/AGENTS.md"
+src = "dotfiles/.shared/codex/AGENTS.md"
 
 [targets.wsl."~/.codex/config.toml"]
-src = "dotfiles/wsl/.codex/config.toml"
+src = "dotfiles/.shared/codex/config.toml"
 override = false
 
 [targets.wsl."~/.codex/rules/custom.rules"]
-src = "dotfiles/wsl/.codex/rules/custom.rules"
+src = "dotfiles/.shared/codex/rules/custom.rules"
 
 [targets.wsl."~/.config/gh/config.yml"]
 src = "dotfiles/wsl/.config/gh/config.yml"
