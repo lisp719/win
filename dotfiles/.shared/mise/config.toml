@@ -29,7 +29,7 @@ node = { version = "latest", os = ["linux"] }
 "npm:prettier" = { version = "latest", os = ["linux"] }
 "npm:vscode-langservers-extracted" = { version = "latest", os = ["linux"] }
 "npm:yaml-language-server" = { version = "latest", os = ["linux"] }
-opencode = { version = "latest", os = ["linux"] }
+opencode = { version = "1", os = ["linux"] }
 pnpm = { version = "latest", os = ["linux"] }
 ripgrep = "latest"
 starship = "latest"
