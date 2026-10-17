@@ -18,6 +18,7 @@
       - curl
       - git
       - htop
+      - gawk
       - wget
     state: latest
 
