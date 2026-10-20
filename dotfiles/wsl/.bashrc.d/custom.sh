@@ -9,7 +9,7 @@ export HISTSIZE=1000
 
 # fzf
 eval "$(fzf --bash)"
-export FZF_DEFAULT_COMMAND="fd -t f"
+export FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd -t d"
 
