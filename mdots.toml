@@ -46,6 +46,9 @@ src = "dotfiles/.shared/jj/config.toml"
 [targets.win."~/AppData/Roaming/jjui/config.toml"]
 src = "dotfiles/win/AppData/Roaming/jjui/config.toml"
 
+[targets.win."~/AppData/Roaming/leaf/config.toml"]
+src = "dotfiles/.shared/leaf/config.toml"
+
 [targets.win."~/AppData/Roaming/yazi/config/yazi.toml"]
 src = "dotfiles/.shared/yazi/yazi.toml"
 
@@ -81,7 +84,7 @@ src = "dotfiles/.shared/hunk/config.toml"
 src = "dotfiles/.shared/jj/config.toml"
 
 [targets.wsl."~/.config/leaf/config.toml"]
-src = "dotfiles/wsl/.config/leaf/config.toml"
+src = "dotfiles/.shared/leaf/config.toml"
 
 [targets.wsl."~/.config/mise/config.toml"]
 src = "dotfiles/.shared/mise/config.toml"
