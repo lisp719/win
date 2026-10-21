@@ -80,6 +80,9 @@ src = "dotfiles/.shared/hunk/config.toml"
 [targets.wsl."~/.config/jj/config.toml"]
 src = "dotfiles/.shared/jj/config.toml"
 
+[targets.wsl."~/.config/leaf/config.toml"]
+src = "dotfiles/wsl/.config/leaf/config.toml"
+
 [targets.wsl."~/.config/mise/config.toml"]
 src = "dotfiles/.shared/mise/config.toml"
 
