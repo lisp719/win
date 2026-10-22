@@ -9,4 +9,5 @@ network_access = true
 ignore_default_excludes = false
 
 [tui]
+mouse_scroll_speed = 3.0
 notifications = false
