@@ -4,11 +4,6 @@ prefix_rule(
 )
 
 prefix_rule(
-  pattern = ["git"],
-  decision = "forbidden",
-)
-
-prefix_rule(
   pattern = ["jj", ["diff", "st", "status"]],
   decision = "allow",
 )
