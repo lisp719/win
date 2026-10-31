@@ -52,6 +52,19 @@ Invoke-UpdateCheck 'mise' {
     }
 }
 
+Invoke-UpdateCheck 'mdots' {
+    Push-Location -LiteralPath $PSScriptRoot
+    try {
+        if ($Apply) {
+            & mise exec -- mdots push --target win
+        } else {
+            & mise exec -- mdots push --target win --dry-run
+        }
+    } finally {
+        Pop-Location
+    }
+}
+
 foreach ($distro in @('FedoraLinux-44', 'archlinux')) {
     Write-Host "=== $distro ==="
     $wslPath = & wsl.exe --distribution $distro --exec wslpath -a $scriptPath
