@@ -28,6 +28,9 @@ cd "$SCRIPT_DIR/$OS"
 ansible-playbook wsl.yaml "$@"
 "$HOME/.local/bin/mise" "$MISE_ACTION" --global
 (
-  cd "$SCRIPT_DIR"
-  "$HOME/.local/bin/mise" exec -- mdots push --target wsl ${MDOTS_DRY_RUN:+"$MDOTS_DRY_RUN"}
+  MDOTS_PATH=$("$HOME/.local/bin/mise" which mdots)
+  CLONE_DIR=$(mktemp -d "${TMPDIR:-/tmp}/win-XXXXXX")
+  git clone --quiet -- https://github.com/lisp719/win.git "$CLONE_DIR"
+  cd "$CLONE_DIR"
+  "$MDOTS_PATH" push --target wsl ${MDOTS_DRY_RUN:+"$MDOTS_DRY_RUN"}
 )

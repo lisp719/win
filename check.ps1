@@ -55,10 +55,22 @@ Invoke-UpdateCheck 'mise' {
 Invoke-UpdateCheck 'mdots' {
     Push-Location -LiteralPath $PSScriptRoot
     try {
+        $mdotsPath = & mise which mdots
+        if ($LASTEXITCODE -ne 0) {
+            throw 'Failed to locate mdots.'
+        }
+
+        $clonePath = Join-Path ([System.IO.Path]::GetTempPath()) ("win-{0}" -f [guid]::NewGuid().ToString('N'))
+        & git clone --quiet -- https://github.com/lisp719/win.git $clonePath
+        if ($LASTEXITCODE -ne 0) {
+            throw 'Failed to clone the repository.'
+        }
+
+        Set-Location -LiteralPath $clonePath
         if ($Apply) {
-            & mise exec -- mdots push --target win
+            & $mdotsPath push --target win
         } else {
-            & mise exec -- mdots push --target win --dry-run
+            & $mdotsPath push --target win --dry-run
         }
     } finally {
         Pop-Location
