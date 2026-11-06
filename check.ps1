@@ -36,14 +36,6 @@ Invoke-UpdateCheck 'winget' {
     }
 }
 
-Invoke-UpdateCheck 'store' {
-    if ($Apply) {
-        & store updates --apply true
-    } else {
-        & store updates --apply false
-    }
-}
-
 Invoke-UpdateCheck 'mise' {
     if ($Apply) {
         & mise upgrade --global
