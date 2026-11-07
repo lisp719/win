@@ -1,37 +1,72 @@
 [[language]]
 name = "css"
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "css"] }
+formatter = { command = "prettier", args = [
+  "--stdin-filepath",
+  "%{buffer_name}",
+  "--parser",
+  "css",
+] }
 
 [[language]]
 name = "html"
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "html"] }
+formatter = { command = "prettier", args = [
+  "--stdin-filepath",
+  "%{buffer_name}",
+  "--parser",
+  "html",
+] }
 
 [[language]]
 name = "javascript"
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "babel"] }
+formatter = { command = "prettier", args = [
+  "--stdin-filepath",
+  "%{buffer_name}",
+  "--parser",
+  "babel",
+] }
 
 [[language]]
 name = "json"
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "json"] }
+formatter = { command = "prettier", args = [
+  "--stdin-filepath",
+  "%{buffer_name}",
+  "--parser",
+  "json",
+] }
 
 [[language]]
 name = "jsonc"
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "json"] }
+formatter = { command = "prettier", args = [
+  "--stdin-filepath",
+  "%{buffer_name}",
+  "--parser",
+  "json",
+] }
 
 [[language]]
 name = "jsx"
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "babel"] }
+formatter = { command = "prettier", args = [
+  "--stdin-filepath",
+  "%{buffer_name}",
+  "--parser",
+  "babel",
+] }
 
 [[language]]
 name = "markdown"
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "markdown"] }
+formatter = { command = "prettier", args = [
+  "--stdin-filepath",
+  "%{buffer_name}",
+  "--parser",
+  "markdown",
+] }
 
 [[language]]
 name = "text"
@@ -41,17 +76,32 @@ file-types = ["rules"]
 [[language]]
 name = "toml"
 auto-format = true
-formatter = { command = "taplo", args = ["format", "-"] }
+formatter = { command = "taplo", args = [
+  "format",
+  "--stdin-filepath",
+  "%{buffer_name}",
+  "-",
+] }
 
 [[language]]
 name = "tsx"
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+formatter = { command = "prettier", args = [
+  "--stdin-filepath",
+  "%{buffer_name}",
+  "--parser",
+  "typescript",
+] }
 
 [[language]]
 name = "typescript"
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+formatter = { command = "prettier", args = [
+  "--stdin-filepath",
+  "%{buffer_name}",
+  "--parser",
+  "typescript",
+] }
 
 [language-server.typescript-language-server]
 command = "vtsls"
