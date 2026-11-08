@@ -1,3 +1,6 @@
 mode = "unified"
 prompt_save_view_preferences = false
 wrap_lines = true
+
+[vcs]
+watch = true
