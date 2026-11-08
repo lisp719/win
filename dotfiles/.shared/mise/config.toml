@@ -1,5 +1,6 @@
 [tools]
 apm = "latest"
+"aqua:anomalyco/opencode" = "latest"
 "aqua:pkgxdev/pkgx" = { version = "latest", os = ["linux"] }
 bat = "latest"
 bottom = "latest"
@@ -30,7 +31,6 @@ node = { version = "latest", os = ["linux"] }
 "npm:prettier" = { version = "latest", os = ["linux"] }
 "npm:vscode-langservers-extracted" = { version = "latest", os = ["linux"] }
 "npm:yaml-language-server" = { version = "latest", os = ["linux"] }
-opencode = { version = "latest", allow_builds = ["@opencode/cli"], os = ["linux"] }
 pnpm = { version = "latest", os = ["linux"] }
 ripgrep = "latest"
 starship = "latest"
