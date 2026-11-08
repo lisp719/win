@@ -16,6 +16,9 @@ src = "dotfiles/.shared/hunk/config.toml"
 [targets.win."~/.config/mise/config.toml"]
 src = "dotfiles/.shared/mise/config.toml"
 
+[targets.win."~/.config/opencode/opencode.json"]
+src = "dotfiles/win/.config/opencode/opencode.json"
+
 [targets.win."~/.config/starship.toml"]
 src = "dotfiles/.shared/starship.toml"
 
