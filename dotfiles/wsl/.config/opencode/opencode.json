@@ -5,6 +5,6 @@
     { "action": "external_directory", "resource": "/tmp/*", "effect": "allow" },
     { "action": "shell", "resource": "sudo *", "effect": "ask" },
     { "action": "shell", "resource": "rm *", "effect": "ask" },
-    { "action": "shell", "resource": "git *", "effect": "deny" }
+    { "action": "shell", "resource": "git *", "effect": "ask" }
   ]
 }
