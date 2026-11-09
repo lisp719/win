@@ -8,6 +8,6 @@
     { "action": "shell", "resource": "del *", "effect": "ask" },
     { "action": "shell", "resource": "rmdir *", "effect": "ask" },
     { "action": "shell", "resource": "rd *", "effect": "ask" },
-    { "action": "shell", "resource": "git *", "effect": "deny" }
+    { "action": "shell", "resource": "git *", "effect": "ask" }
   ]
 }
