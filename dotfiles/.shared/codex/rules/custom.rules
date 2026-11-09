@@ -4,11 +4,16 @@ prefix_rule(
 )
 
 prefix_rule(
-  pattern = ["jj", ["diff", "st", "status"]],
+  pattern = ["rm"],
+  decision = "prompt",
+)
+
+prefix_rule(
+  pattern = ["docker", "scout", "cves"],
   decision = "allow",
 )
 
 prefix_rule(
-  pattern = ["rm"],
-  decision = "prompt",
+  pattern = ["jj", ["diff", "st", "status"]],
+  decision = "allow",
 )
