@@ -34,6 +34,9 @@ src = "dotfiles/win/AppData/Local/lazygit/config.yml"
 [targets.win."~/AppData/Roaming/Zellij/config/config.kdl"]
 src = "dotfiles/.shared/zellij/config.kdl"
 
+[targets.win."~/AppData/Roaming/bottom/bottom.toml"]
+src = "dotfiles/win/AppData/Roaming/bottom/bottom.toml"
+
 [targets.win."~/AppData/Roaming/helix/config.toml"]
 src = "dotfiles/.shared/helix/config.toml"
 
