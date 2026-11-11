@@ -35,7 +35,7 @@ src = "dotfiles/win/AppData/Local/lazygit/config.yml"
 src = "dotfiles/.shared/zellij/config.kdl"
 
 [targets.win."~/AppData/Roaming/bottom/bottom.toml"]
-src = "dotfiles/win/AppData/Roaming/bottom/bottom.toml"
+src = "dotfiles/.shared/bottom/bottom.toml"
 
 [targets.win."~/AppData/Roaming/helix/config.toml"]
 src = "dotfiles/.shared/helix/config.toml"
@@ -64,6 +64,9 @@ override = false
 
 [targets.wsl."~/.codex/rules/custom.rules"]
 src = "dotfiles/.shared/codex/rules/custom.rules"
+
+[targets.wsl."~/.config/bottom/bottom.toml"]
+src = "dotfiles/.shared/bottom/bottom.toml"
 
 [targets.wsl."~/.config/gh/config.yml"]
 src = "dotfiles/wsl/.config/gh/config.yml"
