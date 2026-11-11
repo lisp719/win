@@ -1,0 +1,4 @@
+[processes]
+default_sort = "mem"
+default_memory_value = true
+default_grouped = true
