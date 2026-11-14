@@ -1,13 +1,13 @@
 lockfile_version: '1'
-apm_version: 0.35.0
+apm_version: 0.35.1
 dependencies:
-- repo_url: _local/common.instructions.md
-  name: common.instructions.md
+- repo_url: _local/.common.instructions.md
+  name: .common.instructions.md
   version: 1.0.0
   package_type: apm_package
   source: local
-  local_path: ~/.templates/common.instructions.md
-  content_hash: sha256:c3708a9ac730184e34358f3b72a7588299232883a8a2d3e602b82f6a58866b3a
+  local_path: ~/.templates/.common.instructions.md
+  content_hash: sha256:01dd0ed9829eea95aa601aa2a6d7d75173e3b7d8a8568ccc42c0500a7b4aeaf1
 - repo_url: humanlayer/skills
   name: show-me
   host: github.com
