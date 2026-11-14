@@ -107,11 +107,11 @@ src = "dotfiles/.shared/zellij/config.kdl"
 [targets.wsl."~/.gitconfig"]
 src = "dotfiles/wsl/.gitconfig"
 
+[targets.wsl."~/.templates/.common.instructions.md"]
+src = "dotfiles/wsl/.templates/.common.instructions.md"
+
 [targets.wsl."~/.templates/apm-slim.yml"]
 src = "dotfiles/wsl/.templates/apm-slim.yml"
 
 [targets.wsl."~/.templates/apm.yml"]
 src = "dotfiles/wsl/.templates/apm.yml"
-
-[targets.wsl."~/.templates/common.instructions.md"]
-src = "dotfiles/wsl/.templates/common.instructions.md"
